@@ -1,0 +1,43 @@
+.social {
+	padding-top: 32px;
+	padding-bottom: 31px;
+	&__caption {
+		font-family: "SF Pro Display", sans-serif;
+		font-size: 12px;
+		line-height: 100%;
+		text-align: center;
+		color: #5f6266;
+		margin-bottom: 15px;
+	}
+	&__link {
+		& + & {
+			margin-left: 15px;
+		}
+		display: block;
+		width: 30px;
+		height: 30px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		&--fb {
+			background-image: url(../../img/social/facebook.svg);
+		}
+		&--inst {
+			background-image: url(../../img/social/instagram.svg);
+		}
+		&--yt {
+			background-image: url(../../img/social/youtube.svg);
+		}
+		&--hz {
+			background-image: url(../../img/social/houz.svg);
+		}
+		&--pt {
+			background-image: url(../../img/social/pinterest.svg);
+		}
+	}
+}
+@media (max-width: 1318px) {
+}
+@media (max-width: 1010px) {
+}
+@media (max-width: 760px) {
+}

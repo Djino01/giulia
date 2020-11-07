@@ -1,0 +1,40 @@
+.header {
+	&__top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 21px 19px 19px 22px;
+		border-bottom: 1px solid #d7dbdd;
+	}
+	&__logo {
+		margin-right: -98px;
+	}
+	&__button {
+		.header__showrooms {
+			display: none;
+		}
+		.link + .link {
+			margin-left: 50px;
+		}
+	}
+	&__bottom {
+		padding: 15px 27px 18px 0px;
+	}
+	&__menu {
+		width: 646px;
+		ul {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			li {
+				a {
+					display: block;
+					font-weight: 500;
+					font-size: 15px;
+					line-height: 100%;
+					color: #141516;
+				}
+			}
+		}
+	}
+}

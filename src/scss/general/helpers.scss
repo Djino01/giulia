@@ -1,0 +1,177 @@
+.js-focus-visible :focus:not(.focus-visible) {
+	outline: none;
+	box-shadow: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.page {
+	overflow: hidden;
+	max-width: 1580px;
+	margin: 0px auto;
+}
+
+.wrapper {
+	max-width: 1318px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.img-cover img,
+.svg-cover svg {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.img-contain img,
+.svg-contain svg {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.logo {
+	width: 174px;
+	height: 32px;
+	display: block;
+}
+
+.btn {
+	font-family: "FuturaNew", sans-serif;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 100%;
+	color: #ffffff;
+	padding: 21px 30px;
+	border-radius: 18px;
+	background-color: #da251d;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s;
+	i {
+		width: 15px;
+		height: 15px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #fff;
+		border-radius: 50%;
+		margin-left: 8px;
+		svg {
+			width: 7px;
+			height: 7px;
+			object-fit: contain;
+			display: block;
+		}
+	}
+	&:hover {
+		background-color: rgb(255, 69, 69);
+		transition: all 0.3s;
+	}
+	&--item {
+		border: 1px solid #f3c9ca;
+		color: #da251d;
+		background-color: transparent;
+		i {
+			background-color: #da251d;
+			svg {
+				& * {
+					fill: #fff;
+				}
+			}
+		}
+	}
+}
+
+.link {
+	display: inline-flex;
+	align-items: center;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 94%;
+	color: #d70b12;
+	img {
+		width: 15px;
+		height: 15px;
+		object-fit: contain;
+		display: block;
+		margin-right: 6px;
+	}
+}
+
+.title {
+	font-weight: 500;
+	font-size: 60px;
+	line-height: 100%;
+	letter-spacing: -0.04em;
+	span {
+		color: #da251d;
+	}
+}
+
+.caption {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 102%;
+	letter-spacing: 0.13em;
+	text-transform: uppercase;
+	color: #aeaeae;
+}
+
+.desc {
+	font-family: "SF Pro Display", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 164%;
+	color: #5f6266;
+}
+
+.arrow {
+	width: 24px;
+	height: 24px;
+	svg {
+		width: 100%;
+		height: 100%;
+		display: block;
+		object-fit: contain;
+	}
+}
+
+@media (max-width: 1200px) {
+	.wrapper {
+		max-width: 1010px;
+	}
+}
+@media (max-width: 1010px) {
+	.wrapper {
+		max-width: 750px;
+	}
+}
+@media (max-width: 760px) {
+}

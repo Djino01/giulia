@@ -1,0 +1,68 @@
+.stages {
+	padding-top: 63px;
+	padding-bottom: 96px;
+	&__title {
+		text-align: center;
+	}
+	&__wrap {
+		display: flex;
+		justify-content: space-between;
+		max-width: 1010px;
+		margin: 133px auto 0px;
+		position: relative;
+		left: 28px;
+	}
+	&__progress {
+		width: 52px;
+		height: 1480px;
+	}
+	&__row {
+		width: 860px;
+		margin-right: -7px;
+	}
+	&__coll {
+		& + & {
+			margin-top: 100px;
+		}
+	}
+	&__img {
+		width: 322px;
+		height: 216px;
+		margin-right: 106px;
+	}
+	&__box {
+		width: calc(100% - 428px);
+		margin-bottom: 20px;
+	}
+	&__number {
+		width: 38px;
+		height: 38px;
+		padding-left: 3px;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 102%;
+		letter-spacing: 0.13em;
+		text-transform: uppercase;
+		color: #da251d;
+		border: 2px solid #da251d;
+		border-radius: 50%;
+		margin-bottom: 20px;
+	}
+	&__caption {
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 110%;
+		letter-spacing: -0.04em;
+		color: #141516;
+	}
+	&__btn {
+		padding: 16px 22px;
+		margin-top: 20px;
+	}
+}
+@media (max-width: 1318px) {
+}
+@media (max-width: 1010px) {
+}
+@media (max-width: 760px) {
+}
