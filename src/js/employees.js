@@ -14,26 +14,29 @@ swiperHome.each(function () {
 		},
 		breakpoints: {
 			100: {
-				slidesPerView: 1.1,
+				slidesPerView: 1.2,
 				slidesPerGroup: 1,
+				spaceBetween: 20,
 				initialSlide: 0,
 			},
 			600: {
 				slidesPerView: 2,
 				slidesPerGroup: 1,
+				spaceBetween: 20,
 				initialSlide: 0,
 			},
 			760: {
-				slidesPerView: 2.5,
+				slidesPerView: 2.4,
 				slidesPerGroup: 1,
+				spaceBetween: 20,
 				initialSlide: 0,
 			},
 			1010: {
-				slidesPerView: 4,
+				slidesPerView: 3,
 				slidesPerGroup: 1,
 				initialSlide: 0,
 			},
-			1200: {
+			1318: {
 				slidesPerView: 4,
 				slidesPerGroup: 1,
 				initialSlide: 0,

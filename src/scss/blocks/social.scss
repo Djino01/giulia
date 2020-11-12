@@ -18,20 +18,41 @@
 		height: 30px;
 		background-repeat: no-repeat;
 		background-size: contain;
+		transition: all 0.3s;
 		&--fb {
-			background-image: url(../../img/social/facebook.svg);
+			background-image: url(../img/social/facebook.svg);
+			&:hover {
+				background-image: url(../img/social/facebook-hover.svg);
+				transition: all 0.3s;
+			}
 		}
 		&--inst {
-			background-image: url(../../img/social/instagram.svg);
+			background-image: url(../img/social/instagram.svg);
+			&:hover {
+				background-image: url(../img/social/instagram-hover.svg);
+				transition: all 0.3s;
+			}
 		}
 		&--yt {
-			background-image: url(../../img/social/youtube.svg);
+			background-image: url(../img/social/youtube.svg);
+			&:hover {
+				background-image: url(../img/social/youtube-hover.svg);
+				transition: all 0.3s;
+			}
 		}
 		&--hz {
-			background-image: url(../../img/social/houz.svg);
+			background-image: url(../img/social/houz.svg);
+			&:hover {
+				background-image: url(../img/social/houz-hover.svg);
+				transition: all 0.3s;
+			}
 		}
 		&--pt {
-			background-image: url(../../img/social/pinterest.svg);
+			background-image: url(../img/social/pinterest.svg);
+			&:hover {
+				background-image: url(../img/social/pinterest-hover.svg);
+				transition: all 0.3s;
+			}
 		}
 	}
 }

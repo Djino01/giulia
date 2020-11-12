@@ -19,12 +19,14 @@
 			z-index: 10;
 			&:after {
 				content: "";
+				position: absolute;
 				width: 202px;
 				height: 14px;
 				background-image: url(../../img/connection/icon.svg);
+				background-repeat: no-repeat;
 				background-size: contain;
-				left: 10px;
-				bottom: 0;
+				left: 0px;
+				bottom: -15px;
 			}
 		}
 	}
@@ -36,10 +38,79 @@
 		margin-top: 50px;
 		margin-bottom: 39px;
 	}
+	&__btn {
+		i {
+			background-color: transparent;
+			svg {
+				width: 15px;
+				height: 15px;
+				.connection__btn-line {
+					fill: #da251d;
+				}
+				.connection__btn-bg {
+					fill: #fff;
+				}
+			}
+		}
+		&:hover {
+			i {
+				background-color: transparent;
+				svg {
+					.connection__btn-line {
+						fill: #fff;
+					}
+					.connection__btn-bg {
+						fill: #b90207;
+					}
+				}
+			}
+		}
+	}
 }
 @media (max-width: 1318px) {
+	.connection {
+		&__title {
+			font-size: 45px;
+			span {
+				&:after {
+					width: 100%;
+					height: 10px;
+					bottom: -10px;
+				}
+			}
+		}
+	}
 }
 @media (max-width: 1010px) {
+	.connection {
+		padding-top: 80px;
+		padding-bottom: 60px;
+		&__wrap {
+			max-width: 470px;
+		}
+		&__desc {
+			font-size: 18px;
+			margin-top: 30px;
+			margin-bottom: 25px;
+		}
+	}
 }
 @media (max-width: 760px) {
+	.connection {
+		&__title {
+			font-size: 36px;
+			span {
+				&:after {
+					width: 100%;
+					height: 10px;
+					bottom: -10px;
+				}
+			}
+		}
+		&__desc {
+			font-size: 16px;
+			margin-top: 30px;
+			margin-bottom: 25px;
+		}
+	}
 }

@@ -1,0 +1,257 @@
+.projecrs {
+	padding-top: 119px;
+	padding-bottom: 128px;
+	background-color: #0d1214;
+	position: relative;
+	z-index: 10;
+	overflow: hidden;
+	&__bg {
+		&-right {
+			position: absolute;
+			width: 458px;
+			height: 916px;
+			top: calc(50% - 632px);
+			right: 0px;
+			z-index: -1;
+		}
+		&-bottom {
+			position: absolute;
+			width: 606px;
+			height: 505px;
+			top: calc(50% + 132px);
+			right: calc(50% - 304px);
+			z-index: -1;
+		}
+	}
+	&__top {
+		text-align: center;
+		max-width: 957px;
+		margin: 0px auto 40px;
+	}
+	&__title {
+		color: #a9b2b5;
+		margin-bottom: 17px;
+	}
+	&__subtitle {
+		font-family: "SF Pro Display", sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 130%;
+		color: #5f6266;
+		margin-bottom: 41px;
+	}
+	&__tab {
+		width: calc(33.333% - 14px);
+		padding: 20px 20px;
+		background-color: #d01218;
+		text-align: center;
+		cursor: pointer;
+		transition: all 0.3s;
+		&-caption {
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 100%;
+			letter-spacing: -0.04em;
+			color: #ffffff;
+			margin-bottom: 10px;
+		}
+		&-desc {
+			font-family: "SF Pro Display", sans-serif;
+			font-weight: 500;
+			font-size: 13px;
+			line-height: 100%;
+			color: #ffffff;
+			opacity: 0.6;
+		}
+		&:hover {
+			background-color: #b90207;
+			transition: all 0.3s;
+		}
+		&.active {
+			background-color: #fff;
+			.projecrs__tab-caption,
+			.projecrs__tab-desc {
+				color: #141516;
+			}
+		}
+	}
+	&__item {
+		width: 100%;
+		height: 696px;
+		position: relative;
+		z-index: 10;
+		margin: 0px 75px;
+	}
+	&__content {
+		position: relative;
+		z-index: 10;
+	}
+	&__block {
+		position: absolute;
+		visibility: hidden;
+		opacity: 0;
+		width: 100%;
+		transition: all 0s;
+		&.active {
+			position: relative;
+			visibility: visible;
+			opacity: 1;
+			transition: all 0.3s;
+		}
+	}
+	&__slick {
+		margin-left: -75px;
+		margin-right: 75px;
+		.slick-list {
+			overflow: visible;
+		}
+		.slick-slide {
+			transform: scale(0.9);
+			opacity: 0.2;
+			transition: all 0.3s;
+			&.slick-current {
+				transform: scale(1);
+				opacity: 1;
+				transition: all 0.3s;
+			}
+		}
+	}
+	&__bg {
+		width: 100%;
+		height: 100%;
+	}
+	&__box {
+		position: absolute;
+		width: 272px;
+		height: 342px;
+		padding: 30px 10px 30px 29px;
+		left: 20px;
+		bottom: 18px;
+		background-image: url(../img/projects/slide-bg.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		font-weight: 500;
+		font-size: 26px;
+		line-height: 114%;
+		letter-spacing: -0.04em;
+		color: #141516;
+		&-city {
+			font-family: "SF Pro Display", sans-serif;
+			font-size: 14px;
+			line-height: 100%;
+			color: #141516;
+			opacity: 0.6;
+			margin-top: 25px;
+			margin-bottom: 25px;
+		}
+		&-play {
+			width: 44px;
+			height: 44px;
+			left: calc(50% - 22px);
+			top: calc(50% - 22px);
+			background-color: #e21219;
+			border-radius: 50%;
+			transition: all 0.3s;
+			&:hover {
+				background-color: #b90207;
+				transition: all 0.3s;
+			}
+		}
+	}
+	&__bottom {
+		margin-top: 35px;
+	}
+}
+@media (max-width: 1318px) {
+	.projecrs {
+		padding-top: 120px;
+		padding-bottom: 120px;
+		&__item {
+			height: 550px;
+		}
+	}
+}
+@media (max-width: 1010px) {
+	.projecrs {
+		padding-top: 100px;
+		padding-bottom: 100px;
+		&__top {
+			margin-bottom: 35px;
+		}
+		&__subtitle {
+			font-size: 16px;
+			margin-bottom: 30px;
+		}
+		&__item {
+			height: 420px;
+		}
+		&__tab {
+			padding: 20px 15px;
+			&-caption {
+				font-size: 18px;
+			}
+		}
+		&__box {
+			width: 230px;
+			height: 290px;
+			padding: 25px 10px 20px 20px;
+			font-size: 22px;
+		}
+		&__bg {
+			&-right {
+				width: 340px;
+				height: 650px;
+				top: calc(50% - 440px);
+			}
+			&-bottom {
+				width: 500px;
+				height: 340px;
+				top: calc(50% + 25px);
+				right: calc(50% - 255px);
+			}
+		}
+	}
+}
+@media (max-width: 760px) {
+	.projecrs {
+		padding-top: 80px;
+		padding-bottom: 80px;
+		&__top {
+			margin-bottom: 25px;
+		}
+		&__subtitle {
+			margin-bottom: 20px;
+		}
+		&__item {
+			height: 340px;
+		}
+		&__tabs {
+			flex-wrap: wrap;
+		}
+		&__tab {
+			width: 100%;
+			& + & {
+				margin-top: 10px;
+			}
+		}
+		&__box {
+			width: 180px;
+			height: 225px;
+			padding: 15px 10px 20px 15px;
+			font-size: 18px;
+			left: 15px;
+			bottom: 15px;
+			&-city {
+				margin-top: 15px;
+				margin-bottom: 15px;
+			}
+			&-play {
+				width: 40px;
+				height: 40px;
+			}
+		}
+		&__bottom {
+			margin-top: 25px;
+		}
+	}
+}

@@ -28,10 +28,14 @@
     "video.js": "^7.8.4"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "focus-visible": "^5.1.0",
     "gsap": "^3.5.1",
     "jquery": "^3.5.1",
+    "jquery.maskedinput": "^1.4.1",
+    "pace-js": "^1.0.2",
     "scroll-lock": "^2.1.4",
+    "slick-carousel": "^1.8.1",
     "swiper": "^6.1.2"
   }
 }

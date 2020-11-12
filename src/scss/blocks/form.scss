@@ -1,0 +1,95 @@
+.form {
+	&__top {
+		text-align: center;
+		margin-bottom: 24px;
+	}
+	&__title {
+		font-weight: 500;
+		font-size: 34px;
+		line-height: 110%;
+		letter-spacing: -0.04em;
+		color: #141516;
+		margin-bottom: 16px;
+	}
+	&__subtitle {
+		font-family: "SF Pro Display", sans-serif;
+		font-size: 13px;
+		line-height: 154%;
+		letter-spacing: 0.01em;
+		color: #767d82;
+	}
+	&__label {
+		display: block;
+		position: relative;
+		z-index: 10;
+	}
+	&__label + &__label {
+		margin-top: 30px;
+	}
+	&__icon {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		top: calc(50% - 13px);
+		left: 0px;
+		svg {
+			& * {
+				transition: all 0.3s;
+			}
+		}
+		&.hover {
+			svg {
+				.form__fill {
+					fill: #5bc16c;
+					transition: all 0.3s;
+				}
+				.form__stroke {
+					stroke: #5bc16c;
+					transition: all 0.3s;
+				}
+			}
+		}
+	}
+	&__bottom {
+		text-align: center;
+		margin-top: 35px;
+	}
+	&__agreement {
+		max-width: 250px;
+		margin: 35px auto 0px;
+		font-family: "SF Pro Display", sans-serif;
+		font-size: 11px;
+		line-height: 164%;
+		letter-spacing: 0.01em;
+		color: #767d82;
+		a {
+			color: #767d82;
+			text-decoration: underline;
+			transition: all 0.3s;
+			&:hover {
+				color: #da251d;
+				transition: all 0.3s;
+			}
+		}
+	}
+}
+@media (max-width: 760px) {
+	.form {
+		&__top {
+			margin-bottom: 20px;
+		}
+		&__title {
+			font-size: 30px;
+			margin-bottom: 10px;
+		}
+		&__label + &__label {
+			margin-top: 20px;
+		}
+		&__bottom {
+			margin-top: 30px;
+		}
+		&__agreement {
+			margin-top: 20px;
+		}
+	}
+}

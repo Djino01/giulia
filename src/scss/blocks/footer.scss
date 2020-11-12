@@ -17,4 +17,20 @@
 @media (max-width: 1010px) {
 }
 @media (max-width: 760px) {
+	.footer {
+		padding: 16px 15px;
+		&__wrap {
+			flex-wrap: wrap;
+			justify-content: center;
+			text-align: center;
+		}
+		&__confidentiality {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		&__developer {
+			width: 100%;
+			margin-top: 10px;
+		}
+	}
 }

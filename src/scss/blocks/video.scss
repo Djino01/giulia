@@ -1,5 +1,5 @@
 .video {
-	height: 889px;
+	height: 100vh;
 	position: relative;
 	z-index: 10;
 	&__bg {
@@ -15,6 +15,10 @@
 		background: #e21219;
 		border-radius: 50%;
 		transition: all 0.3s;
+		&:hover {
+			background-color: #b90207;
+			transition: all 0.3s;
+		}
 	}
 	&__desc {
 		font-family: "SF Pro Display", sans-serif;

@@ -1,8 +1,22 @@
 .conditions {
-	padding-top: 98px;
+	padding-top: 385px;
 	padding-bottom: 143px;
-	&__img {
+	&__top {
 		margin-bottom: 145px;
+		position: relative;
+		z-index: 10;
+		&-caption {
+			position: absolute;
+			width: 100%;
+			left: 0px;
+			bottom: 22px;
+			font-family: "SF Pro Display", sans-serif;
+			font-size: 9px;
+			line-height: 100%;
+			text-align: center;
+			color: #ffffff;
+			opacity: 0.5;
+		}
 	}
 	&__body {
 		text-align: center;
@@ -39,9 +53,78 @@
 		padding-right: 16px;
 	}
 }
+@media (max-width: 1920px) {
+	.conditions {
+		padding-top: 230px;
+	}
+}
+@media (max-width: 1530px) {
+	.conditions {
+		padding-top: 75px;
+	}
+}
 @media (max-width: 1318px) {
+	.conditions {
+		padding-top: 80px;
+		padding-bottom: 120px;
+		&__top {
+			margin-bottom: 100px;
+		}
+		&__row {
+			margin-top: 45px;
+			margin-bottom: 80px;
+		}
+		&__coll {
+			width: calc(25% - 30px);
+		}
+		&__icon {
+			margin-bottom: 20px;
+		}
+		&__desc {
+			padding-right: 0px;
+		}
+		&__caption {
+			font-size: 23px;
+			margin-bottom: 15px;
+		}
+	}
 }
 @media (max-width: 1010px) {
+	.conditions {
+		padding-top: 60px;
+		padding-bottom: 100px;
+		&__top {
+			margin-bottom: 60px;
+			&-caption {
+				bottom: 15px;
+			}
+		}
+		&__row {
+			flex-wrap: wrap;
+			margin-top: 40px;
+			margin-bottom: 30px;
+		}
+		&__coll {
+			width: calc(50% - 30px);
+			margin-bottom: 40px;
+		}
+	}
 }
 @media (max-width: 760px) {
+	.conditions {
+		padding-top: 40px;
+		padding-bottom: 80px;
+		&__top {
+			margin-bottom: 40px;
+		}
+		&__row {
+			flex-wrap: wrap;
+			margin-top: 30px;
+			margin-bottom: 10px;
+		}
+		&__coll {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+	}
 }
