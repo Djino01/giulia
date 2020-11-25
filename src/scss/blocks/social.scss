@@ -47,6 +47,13 @@
 				transition: all 0.3s;
 			}
 		}
+		&--vk {
+			background-image: url(../img/social/vk.svg);
+			&:hover {
+				background-image: url(../img/social/vk-hover.svg);
+				transition: all 0.3s;
+			}
+		}
 		&--pt {
 			background-image: url(../img/social/pinterest.svg);
 			&:hover {

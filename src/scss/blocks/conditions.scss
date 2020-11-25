@@ -2,7 +2,7 @@
 	padding-top: 385px;
 	padding-bottom: 143px;
 	&__top {
-		margin-bottom: 145px;
+		margin-bottom: 75px;
 		position: relative;
 		z-index: 10;
 		&-caption {
@@ -11,15 +11,17 @@
 			left: 0px;
 			bottom: 22px;
 			font-family: "SF Pro Display", sans-serif;
-			font-size: 9px;
+			font-size: 11px;
 			line-height: 100%;
 			text-align: center;
 			color: #ffffff;
 			opacity: 0.5;
+			letter-spacing: 0.5px;
 		}
 	}
 	&__body {
 		text-align: center;
+		padding-top: 75px;
 	}
 	&__row {
 		display: flex;
@@ -68,7 +70,10 @@
 		padding-top: 80px;
 		padding-bottom: 120px;
 		&__top {
-			margin-bottom: 100px;
+			margin-bottom: 50px;
+		}
+		&__body {
+			padding-top: 50px;
 		}
 		&__row {
 			margin-top: 45px;
@@ -94,10 +99,13 @@
 		padding-top: 60px;
 		padding-bottom: 100px;
 		&__top {
-			margin-bottom: 60px;
+			margin-bottom: 20px;
 			&-caption {
 				bottom: 15px;
 			}
+		}
+		&__body {
+			padding-top: 40px;
 		}
 		&__row {
 			flex-wrap: wrap;
@@ -114,8 +122,8 @@
 	.conditions {
 		padding-top: 40px;
 		padding-bottom: 80px;
-		&__top {
-			margin-bottom: 40px;
+		&__body {
+			padding-top: 20px;
 		}
 		&__row {
 			flex-wrap: wrap;

@@ -19,7 +19,7 @@ $('.awards__left-slick').slick({
 	infinite: false,
 	fade: true,
 	speed: 1000,
-	focusOnSelect: ".awards__slick"
+	asNavFor: ".awards__slick"
 });
 $('.awards .arrow.arrow--prev').on("click", function (event) {
 	$(this).parents('.awards').find('.awards__slick').slick('slickPrev');

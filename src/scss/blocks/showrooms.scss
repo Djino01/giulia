@@ -1,0 +1,354 @@
+.showrooms {
+	padding-top: 80px;
+	&__title {
+		text-align: center;
+		margin-bottom: 63px;
+	}
+	&__body {
+		position: relative;
+		z-index: 10;
+		height: 840px;
+		padding-top: 50px;
+	}
+	&__tabs {
+		align-items: flex-start;
+		position: relative;
+		z-index: 100;
+	}
+	&__tab {
+		width: calc(25% - 15px);
+		padding: 20px 10px;
+		text-align: center;
+		background-color: #d01218;
+		color: #ffffff;
+		cursor: pointer;
+		transition: all 0.3s;
+		&-caption {
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 100%;
+			letter-spacing: -0.04em;
+			margin-bottom: 10px;
+		}
+		&-desc {
+			font-family: "SF Pro Display", sans-serif;
+			font-size: 13px;
+			line-height: 100%;
+			opacity: 0.6;
+		}
+		&.active,
+		&:hover {
+			background-color: #fff;
+			color: #141516;
+			transition: all 0.3s;
+		}
+	}
+	&__content {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		overflow: hidden;
+	}
+	&__map {
+		position: absolute;
+		width: 2560px;
+		height: 840px;
+		top: 0px;
+		left: calc(50% - 1287px);
+	}
+	&__marker {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		background-color: #fff;
+		border-radius: 50%;
+		top: calc(50% + 218px);
+		left: calc(50% - 235px);
+		cursor: pointer;
+		z-index: 50;
+		transition: all 0.3s;
+		&:after {
+			content: "";
+			position: absolute;
+			width: 8px;
+			height: 8px;
+			top: calc(50% - 4px);
+			left: calc(50% - 4px);
+			background-color: #ffffff;
+			border-radius: 50%;
+			opacity: 0;
+			transition: all 0.3s;
+		}
+		&:hover {
+			background-color: #da251d;
+			transition: all 0.3s;
+		}
+		&.active {
+			box-shadow: 0px -31px 123px rgba(226, 18, 25, 0.28), 0px -12.9511px 51.3865px rgba(226, 18, 25, 0.201279),
+				0px -6.92426px 27.4737px rgba(226, 18, 25, 0.16691), 0px -3.88168px 15.4015px rgba(226, 18, 25, 0.14),
+				0px -2.06153px 8.17963px rgba(226, 18, 25, 0.11309),
+				0px -0.85785px 3.40373px rgba(226, 18, 25, 0.0787208);
+			background-color: #da251d;
+			transition: all 0.3s;
+			&:after {
+				opacity: 1;
+				transition: all 0.3s;
+			}
+		}
+	}
+	&__box {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+	}
+	&__block {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		visibility: hidden;
+		opacity: 0;
+		transition: all 0s;
+		&.active {
+			visibility: visible;
+			opacity: 1;
+			transition: all 0.3s;
+		}
+		&_1 {
+			.showrooms__marker {
+				top: calc(50% + 235px);
+				left: calc(50% - 53px);
+			}
+			.showrooms__card {
+				top: calc(50% - 191px);
+				left: calc(50% - 38px);
+			}
+		}
+		&_2 {
+			.showrooms__marker {
+				top: calc(50% + 178px);
+				left: calc(50% - 246px);
+			}
+			.showrooms__card {
+				top: calc(50% - 248px);
+				left: calc(50% - 231px);
+			}
+		}
+		&_4 {
+			.showrooms__marker {
+				top: calc(50% + 258px);
+				left: calc(50% - 124px);
+			}
+			.showrooms__card {
+				top: calc(50% - 168px);
+				left: calc(50% - 109px);
+			}
+		}
+	}
+	&__card {
+		position: absolute;
+		width: 306px;
+		height: 441px;
+		top: calc(50% - 208px);
+		left: calc(50% - 220px);
+		z-index: 30;
+		padding: 37px 47px 40px 49px;
+		visibility: hidden;
+		opacity: 0;
+		transition: all 0.3s;
+		&.active {
+			visibility: visible;
+			opacity: 1;
+			transition: all 0.3s;
+		}
+		&-bg {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0px;
+			left: 0px;
+			z-index: -1;
+		}
+		&-top {
+			padding-bottom: 25px;
+			margin-bottom: 25px;
+			border-bottom: 1px solid #a9b2b5;
+		}
+		&-title {
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 100%;
+			letter-spacing: -0.04em;
+			color: #141516;
+			margin-bottom: 12px;
+		}
+		&-subtitle {
+			font-family: "SF Pro Display", sans-serif;
+			font-size: 12px;
+			line-height: 100%;
+			color: #767c81;
+		}
+		&-box {
+			& + & {
+				margin-top: 20px;
+			}
+		}
+		&-caption {
+			font-family: "SF Pro Display", sans-serif;
+			font-size: 13px;
+			line-height: 16px;
+			color: #767c81;
+			margin-bottom: 12px;
+		}
+		&-desc {
+			display: block;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 130%;
+			letter-spacing: -0.01em;
+			color: #141516;
+			transition: all 0.3s;
+		}
+	}
+}
+@media (max-width: 1318px) {
+	.showrooms {
+		padding-top: 60px;
+		&__title {
+			margin-bottom: 30px;
+		}
+		&__tab {
+			width: calc(25% - 10px);
+			padding: 20px 10px;
+			&-caption {
+				font-size: 18px;
+				margin-bottom: 5px;
+			}
+			&-desc {
+				font-size: 12px;
+			}
+		}
+	}
+}
+@media (max-width: 1010px) {
+	.showrooms {
+		padding-top: 90px;
+		&__body {
+			padding-top: 0px;
+			height: auto;
+		}
+		&__tabs {
+			flex-wrap: wrap;
+			margin-left: -24px;
+			margin-right: -24px;
+		}
+		&__tab {
+			width: 50%;
+			padding: 20px 10px;
+			border: 1px solid #fff;
+			&:first-child,
+			&:nth-child(3) {
+				border-right: none;
+			}
+			&:nth-child(n + 3) {
+				border-top: none;
+			}
+			&-caption {
+				font-size: 18px;
+				margin-bottom: 5px;
+			}
+			&-desc {
+				font-size: 12px;
+			}
+		}
+		&__content {
+			position: relative;
+			height: 840px;
+		}
+	}
+}
+@media (max-width: 760px) {
+	.showrooms {
+		&__tabs {
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+		&__tab {
+			width: 100%;
+			border: none;
+			border-bottom: 1px solid #fff;
+		}
+		&__content {
+			height: 650px;
+		}
+		&__block {
+			&_1 {
+				.showrooms__map {
+					top: calc(50% - 465px);
+					left: calc(50% - 1392px);
+				}
+				.showrooms__marker {
+					top: calc(50% + 188px);
+					left: calc(50% - 159px);
+				}
+				.showrooms__card {
+					top: calc(50% - 238px);
+					left: calc(50% - 145px);
+				}
+			}
+			&_2 {
+				.showrooms__map {
+					top: calc(50% - 419px);
+					left: calc(50% - 1203px);
+				}
+				.showrooms__marker {
+					top: calc(50% + 178px);
+					left: calc(50% - 161px);
+				}
+				.showrooms__card {
+					top: calc(50% - 248px);
+					left: calc(50% - 146px);
+				}
+			}
+			&_3 {
+				.showrooms__map {
+					top: calc(50% - 458px);
+					left: calc(50% - 1222px);
+				}
+				.showrooms__marker {
+					top: calc(50% + 178px);
+					left: calc(50% - 170px);
+				}
+				.showrooms__card {
+					top: calc(50% - 248px);
+					left: calc(50% - 155px);
+				}
+			}
+			&_4 {
+				.showrooms__map {
+					top: calc(50% - 493px);
+					left: calc(50% - 1318px);
+				}
+				.showrooms__marker {
+					top: calc(50% + 185px);
+					left: calc(50% - 156px);
+				}
+				.showrooms__card {
+					top: calc(50% - 241px);
+					left: calc(50% - 141px);
+				}
+			}
+		}
+	}
+}
+a.showrooms__card-desc {
+	&:hover {
+		color: #da251d;
+		transition: all 0.3s;
+	}
+}

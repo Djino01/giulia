@@ -16,11 +16,20 @@ $('.catalog--js').on('click', function (event) {
 		touch: false,
 	});
 });
-$('.reviews--js').on('click', function (event) {
+$('body').on('click', ".reviews--js-1", function (event) {
 	event.preventDefault();
 	$.fancybox.open({
 		loop: false,
-		src: '#reviews-modal',
+		src: '#reviews-modal-1',
+		baseClass: 'reviews-fancybox',
+		touch: false,
+	});
+});
+$('body').on('click', ".reviews--js-2", function (event) {
+	event.preventDefault();
+	$.fancybox.open({
+		loop: false,
+		src: '#reviews-modal-2',
 		baseClass: 'reviews-fancybox',
 		touch: false,
 	});

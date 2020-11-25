@@ -15,7 +15,7 @@ $('.header__menu a, .header__showrooms').on("click", function () {
 		$('.header__bottom').removeClass('active');
 	}
 	if ($(window).width() >= '1318') {
-		var translaytThree = 68;
+		var translaytThree = 70;
 	}
 	if ($(window).width() <= '1318') {
 		var translaytThree = 66;

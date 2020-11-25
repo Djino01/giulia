@@ -184,7 +184,7 @@
 			display: block;
 			position: fixed !important;
 			top: 31px;
-			left: -100%;
+			left: 0px;
 			width: 100%;
 			height: calc(100vh - 31px);
 			padding: 96px 15px 50px;
@@ -194,9 +194,11 @@
 			border: none;
 			background-color: #d01218;
 			text-align: center;
+			transform: translateY(-110%);
 			transition: all 0.5s ease;
 			&.active {
-				left: 0px;
+				transform: translateY(0%);
+				transition: all 0.5s ease;
 			}
 			&-btn {
 				display: inline-flex;
@@ -251,10 +253,14 @@
 			}
 			.header__bottom {
 				position: flex;
-				transform: translateY(0);
+				transform: translateY(-110%);
 				visibility: visible;
 				width: 100%;
 				opacity: 1;
+				&.active {
+					transform: translateY(0);
+					transition: all 0.5s ease;
+				}
 			}
 		}
 	}

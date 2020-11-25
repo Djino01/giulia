@@ -13,7 +13,7 @@ color: 'header--light'
 			<div class="promo__subtitle">от мебельной компании Giulia Novars </div>
 			<div class="promo__row flex">
 				<div class="promo__coll">
-					<div class="promo__coll-desc">Расчет проект<br> за 24 часа</div>
+					<div class="promo__coll-desc">Расчет проекта<br> за 24 часа</div>
 					<div class="promo__check img-contain">
 						<img src="img/promo/check.svg" alt="">
 					</div>
@@ -63,9 +63,13 @@ color: 'header--light'
 
 <div class="video">
 	<div class="video__bg img-cover">
-		<img src="img/video/bg.jpg" alt="">
+		<video class="bg-video" pip="false" autoplay="1" muted="muted" loop="" preload="metadata" playsinline=""
+			webkit-playsinline="" poster="img/video/bg.jpg">
+			<source src="img/video/video.mp4" type="video/mp4">
+			<source src="img/video/video.webm" type="video/webm">
+		</video>
 	</div>
-	<a href="https://www.youtube.com/watch?v=MkwINmXL328" class="video__play flex-center" data-fancybox="video">
+	<a href="https://youtu.be/-QeFCs5nqAc" class="video__play flex-center" data-fancybox="video">
 		<img src="img/icon/play.svg" alt="">
 	</a>
 	<div class="video__desc">Видео о компании</div>
@@ -90,7 +94,7 @@ color: 'header--light'
 			</a>
 		</div>
 		<div class="catalog__box">
-			<a href="#" class="catalog__pdf flex-center">
+			<a href="#" class="catalog__pdf flex-center catalog--js">
 				<div class="catalog__pdf-icon">
 					<img src="img/catalog/pdf.svg" alt="">
 				</div>
@@ -117,7 +121,7 @@ color: 'header--light'
 					<div class="info__caption">Менеджеры мебельных шоурумов <span>не разбираются<br> в своем
 							товаре:</span>
 						в
-						размерах, ценах, технических нюанасах.</div>
+						размерах, ценах, технических нюансах.</div>
 				</div>
 				<div class="info__coll">
 					<div class="info__icon img-contain">
@@ -166,7 +170,7 @@ color: 'header--light'
 					<div class="training__caption caption">обучение</div>
 					<div class="training__title title"><span>Giulia Novars</span> обучает сотрудников экономить время и
 						силы своих партнеров</div>
-					<div class="training__desc desc">В каждом шоуруме вас встретят компетентные менеджеры</div>
+					<div class="training__desc desc">В каждом салоне вас встретят компетентные дизайнеры</div>
 				</div>
 				<div class="training__right img-cover">
 					<img src="img/training/img.jpg" alt="">
@@ -178,7 +182,7 @@ color: 'header--light'
 						<img src="img/training/icon.svg" alt="">
 					</div>
 					<div class="training__coll-caption">Каждые полгода проходят обучение на фабрике</div>
-					<div class="training__coll-desc">Все менеджеры при поступлении на работу изучают ассортимент и
+					<div class="training__coll-desc">Все дизайнеры при поступлении на работу изучают ассортимент и
 						дизайн в течение 6 месяцев. Затем каждые полгода посещают специальные семинары для поставщиков
 						на фабрике Giulia Novars, чтобы повышать квалификацию.</div>
 				</div>
@@ -187,7 +191,7 @@ color: 'header--light'
 						<img src="img/training/icon.svg" alt="">
 					</div>
 					<div class="training__coll-caption">Профессионально консультируют по ассортименту</div>
-					<div class="training__coll-desc">Менеджеры разбираются в мебели, дизайне, современных трендах и
+					<div class="training__coll-desc">Дизайнеры разбираются в мебели, дизайне, современных трендах и
 						эргономике грамотно составленного пространства. Они порекомендуют подходящий товар, материалы и
 						технические решения, подробно ответят на вопросы и уберегут от ошибок при проектировании.</div>
 				</div>
@@ -210,7 +214,7 @@ color: 'header--light'
 	<div class="wrapper">
 		<div class="employees__top">
 			<div class="employees__title title">С вами будут работать<br>
-				опытные замерщики, монтажники и специалисты доставки</div>
+				опытные дизайнеры-консультанты, замерщики и специалисты доставки</div>
 			<div class="employees__subtitle desc">Сотрудники Giulia Novars</div>
 		</div>
 		<div class="employees__body">
@@ -222,8 +226,8 @@ color: 'header--light'
 								<img src="img/employees/img-1.jpg" alt="">
 							</div>
 							<div class="employees__bottom">
-								<div class="employees__name">Петров Николай</div>
-								<div class="employees__value">Старший замерщик</div>
+								<div class="employees__name">Татьяна Владимировна Смольянинова</div>
+								<div class="employees__value">Руководитель салонов Giulia Novars</div>
 							</div>
 						</div>
 					</div>
@@ -233,8 +237,8 @@ color: 'header--light'
 								<img src="img/employees/img-2.jpg" alt="">
 							</div>
 							<div class="employees__bottom">
-								<div class="employees__name">Петров Николай</div>
-								<div class="employees__value">Старший замерщик</div>
+								<div class="employees__name">Татьяна Сереброва</div>
+								<div class="employees__value">Дизайнер салона на Комсомольском проспекте</div>
 							</div>
 						</div>
 					</div>
@@ -244,8 +248,8 @@ color: 'header--light'
 								<img src="img/employees/img-3.jpg" alt="">
 							</div>
 							<div class="employees__bottom">
-								<div class="employees__name">Иванова Ольга</div>
-								<div class="employees__value">Менеджер шоурума ТЦ «Гранд»</div>
+								<div class="employees__name">Людмила Зиновьева</div>
+								<div class="employees__value">Дизайнер салона на Комсомольском проспекте</div>
 							</div>
 						</div>
 					</div>
@@ -255,8 +259,8 @@ color: 'header--light'
 								<img src="img/employees/img-4.jpg" alt="">
 							</div>
 							<div class="employees__bottom">
-								<div class="employees__name">Антонова Наталья</div>
-								<div class="employees__value">Менеджер шоурума ТЦ “Гранд”</div>
+								<div class="employees__name">Ника Соколова</div>
+								<div class="employees__value">Управляющая салоном на Комсомольском проспекте</div>
 							</div>
 						</div>
 					</div>
@@ -266,8 +270,207 @@ color: 'header--light'
 								<img src="img/employees/img-5.jpg" alt="">
 							</div>
 							<div class="employees__bottom">
-								<div class="employees__name">Калинина Ирина</div>
-								<div class="employees__value">Менеджер шоурума ТЦ «Гранд»</div>
+								<div class="employees__name">Татьяна Лазарева</div>
+								<div class="employees__value">Дизайнер салона на Комсомольском проспекте</div>
+							</div>
+						</div>
+					</div>
+					<div class="employees__slide swiper-slide">
+						<div class="employees__item">
+							<div class="employees__img img-cover">
+								<img src="img/employees/img-6.jpg" alt="">
+							</div>
+							<div class="employees__bottom">
+								<div class="employees__name">Виктория Магилина</div>
+								<div class="employees__value">Дизайнер салона на Комсомольском проспекте</div>
+							</div>
+						</div>
+					</div>
+					<!--div class="employees__slide swiper-slide">
+						<div class="employees__item">
+							<div class="employees__img img-cover">
+								<img src="img/employees/img-7.jpg" alt="">
+							</div>
+							<div class="employees__bottom">
+								<div class="employees__name">Александр Чечнев</div>
+								<div class="employees__value">Руководитель бригады монтажников салона в МТК «Гранд»
+								</div>
+							</div>
+						</div>
+					</div-->
+					<div class="employees__slide swiper-slide">
+						<div class="employees__item">
+							<div class="employees__img img-cover">
+								<img src="img/employees/img-8.jpg" alt="">
+							</div>
+							<div class="employees__bottom">
+								<div class="employees__name">Анастасия Мацуева</div>
+								<div class="employees__value">Дизайнер салона в МТК «Гранд»</div>
+							</div>
+						</div>
+					</div>
+					<div class="employees__slide swiper-slide">
+						<div class="employees__item">
+							<div class="employees__img img-cover">
+								<img src="img/employees/img-9.jpg" alt="">
+							</div>
+							<div class="employees__bottom">
+								<div class="employees__name">Анастасия Сергеева</div>
+								<div class="employees__value">Дизайнер салона в МТК «Гранд»</div>
+							</div>
+						</div>
+					</div>
+					<div class="employees__slide swiper-slide">
+						<div class="employees__item">
+							<div class="employees__img img-cover">
+								<img src="img/employees/img-10.jpg" alt="">
+							</div>
+							<div class="employees__bottom">
+								<div class="employees__name">Анна Анохина</div>
+								<div class="employees__value">Дизайнер салона в МТК «Гранд»</div>
+							</div>
+						</div>
+					</div>
+					<div class="employees__slide swiper-slide">
+						<div class="employees__item">
+							<div class="employees__img img-cover">
+								<img src="img/employees/img-11.jpg" alt="">
+							</div>
+							<div class="employees__bottom">
+								<div class="employees__name">Елизавета Фаст</div>
+								<div class="employees__value">Дизайнер салона в МТК «Гранд»</div>
+							</div>
+						</div>
+					</div>
+					<div class="employees__slide swiper-slide">
+						<div class="employees__item">
+							<div class="employees__img img-cover">
+								<img src="img/employees/img-12.jpg" alt="">
+							</div>
+							<div class="employees__bottom">
+								<div class="employees__name">Инна Перевалова</div>
+								<div class="employees__value">Дизайнер салона в МТК «Гранд»</div>
+							</div>
+						</div>
+					</div>
+					<div class="employees__slide swiper-slide">
+						<div class="employees__item">
+							<div class="employees__img img-cover">
+								<img src="img/employees/img-13.jpg" alt="">
+							</div>
+							<div class="employees__bottom">
+								<div class="employees__name">Ирина Борисова</div>
+								<div class="employees__value">Дизайнер салона в МТК «Гранд»</div>
+							</div>
+						</div>
+					</div>
+					<div class="employees__slide swiper-slide">
+						<div class="employees__item">
+							<div class="employees__img img-cover">
+								<img src="img/employees/img-14.jpg" alt="">
+							</div>
+							<div class="employees__bottom">
+								<div class="employees__name">Ольга Платонова</div>
+								<div class="employees__value">Дизайнер салона в МТК «Гранд»</div>
+							</div>
+						</div>
+					</div>
+					<div class="employees__slide swiper-slide">
+						<div class="employees__item">
+							<div class="employees__img img-cover">
+								<img src="img/employees/img-15.jpg" alt="">
+							</div>
+							<div class="employees__bottom">
+								<div class="employees__name">Станислав Михеев</div>
+								<div class="employees__value">Администратор салона в МТК «Гранд»</div>
+							</div>
+						</div>
+					</div>
+					<div class="employees__slide swiper-slide">
+						<div class="employees__item">
+							<div class="employees__img img-cover">
+								<img src="img/employees/img-16.jpg" alt="">
+							</div>
+							<div class="employees__bottom">
+								<div class="employees__name">Юлия Балховитина</div>
+								<div class="employees__value">Дизайнер салона в МТК «Гранд»</div>
+							</div>
+						</div>
+					</div>
+					<div class="employees__slide swiper-slide">
+						<div class="employees__item">
+							<div class="employees__img img-cover">
+								<img src="img/employees/img-17.jpg" alt="">
+							</div>
+							<div class="employees__bottom">
+								<div class="employees__name">Екатерина Абросимова</div>
+								<div class="employees__value">Дизайнер салона на Нахимовском проспекте</div>
+							</div>
+						</div>
+					</div>
+					<div class="employees__slide swiper-slide">
+						<div class="employees__item">
+							<div class="employees__img img-cover">
+								<img src="img/employees/img-18.jpg" alt="">
+							</div>
+							<div class="employees__bottom">
+								<div class="employees__name">Елена Балкивская</div>
+								<div class="employees__value">Дизайнер салона на Нахимовском проспекте</div>
+							</div>
+						</div>
+					</div>
+					<div class="employees__slide swiper-slide">
+						<div class="employees__item">
+							<div class="employees__img img-cover">
+								<img src="img/employees/img-19.jpg" alt="">
+							</div>
+							<div class="employees__bottom">
+								<div class="employees__name">Ирина Чертыковцева</div>
+								<div class="employees__value">Дизайнер салона на Нахимовском проспекте</div>
+							</div>
+						</div>
+					</div>
+					<div class="employees__slide swiper-slide">
+						<div class="employees__item">
+							<div class="employees__img img-cover">
+								<img src="img/employees/img-20.jpg" alt="">
+							</div>
+							<div class="employees__bottom">
+								<div class="employees__name">Ольга Азизова</div>
+								<div class="employees__value">Управляющая салоном на Нахимовском проспекте</div>
+							</div>
+						</div>
+					</div>
+					<div class="employees__slide swiper-slide">
+						<div class="employees__item">
+							<div class="employees__img img-cover">
+								<img src="img/employees/img-21.jpg" alt="">
+							</div>
+							<div class="employees__bottom">
+								<div class="employees__name">Ольга Кузнецова</div>
+								<div class="employees__value">Дизайнер салона на Нахимовском проспекте</div>
+							</div>
+						</div>
+					</div>
+					<div class="employees__slide swiper-slide">
+						<div class="employees__item">
+							<div class="employees__img img-cover">
+								<img src="img/employees/img-22.jpg" alt="">
+							</div>
+							<div class="employees__bottom">
+								<div class="employees__name">Татьяна Руденок</div>
+								<div class="employees__value">Дизайнер салона на Нахимовском проспекте</div>
+							</div>
+						</div>
+					</div>
+					<div class="employees__slide swiper-slide">
+						<div class="employees__item">
+							<div class="employees__img img-cover">
+								<img src="img/employees/img-23.jpg" alt="">
+							</div>
+							<div class="employees__bottom">
+								<div class="employees__name">Юлия Прикот</div>
+								<div class="employees__value">Дизайнер салона на Нахимовском проспекте</div>
 							</div>
 						</div>
 					</div>
@@ -378,8 +581,7 @@ color: 'header--light'
 					</div>
 					<div class="stages__box">
 						<div class="stages__number flex-center">2</div>
-						<div class="stages__caption">Менеджеры порекомендуют
-							подходящую мебель</div>
+						<div class="stages__caption">Дизайнеры порекомендуют подходящую мебель</div>
 					</div>
 				</div>
 				<div class="stages__coll flex">
@@ -413,7 +615,7 @@ color: 'header--light'
 					</div>
 				</div>
 			</div>
-			<div class="stages__bottom">
+			<!--div class="stages__bottom">
 				<a href="#" class="stages__btn btn btn--item callback--js">
 					<span>Начать</span>
 					<i>
@@ -423,7 +625,7 @@ color: 'header--light'
 						</svg>
 					</i>
 				</a>
-			</div>
+			</div-->
 		</div>
 	</div>
 </div>
@@ -434,7 +636,7 @@ color: 'header--light'
 			<div class="conditions__img img-cover">
 				<img src="img/conditions/big-img.jpg" alt="">
 			</div>
-			<div class="conditions__top-caption">Название кухни </div>
+			<!--div class="conditions__top-caption">Кухня CERAMIC</div-->
 		</div>
 		<div id="conditions" class="conditions__body">
 			<div class="conditions__title title">Условия<br> сотрудничества</div>
@@ -445,14 +647,14 @@ color: 'header--light'
 					</div>
 					<div class="conditions__caption">Финансовые выгоды для партнеров</div>
 					<div class="conditions__desc">Выплачиваем вознаграждение партнерам сразу после подписания акта
-						приемки- передачи. Делаем персональные скидки для ваших заказчиков.</div>
+						приемки-передачи. Делаем персональные скидки для ваших заказчиков.</div>
 				</div>
 				<div class="conditions__coll">
 					<div class="conditions__icon img-contain">
 						<img src="img/conditions/icon.svg" alt="">
 					</div>
-					<div class="conditions__caption">Комфортное общение с менеджерами</div>
-					<div class="conditions__desc">С каждым партнером работает персональный менеджер. Вы сможете общаться
+					<div class="conditions__caption">Комфортное общение с дизайнерами</div>
+					<div class="conditions__desc">С каждым партнером работает персональный дизайнер. Вы сможете общаться
 						в любом удобном мессенджере или соцсети каждый день.</div>
 				</div>
 				<div class="conditions__coll">
@@ -489,21 +691,20 @@ color: 'header--light'
 <div id="projecrs" class="projecrs">
 	<div class="wrapper">
 		<div class="projecrs__top">
-			<div class="projecrs__title title">Проекты шоурумов<br>
-				с мебелью Giulia Novars</div>
-			<div class="projecrs__subtitle">Более 100 выполненных проекта</div>
+			<div class="projecrs__title title">Проекты наших<br> салонов с мебелью Giulia Novars</div>
+			<div class="projecrs__subtitle">Более 100 выполненных проектов</div>
 			<div class="projecrs__tabs flex">
 				<div class="projecrs__tab active" data-projecrs="1">
 					<div class="projecrs__tab-caption">Комсомольский проспект</div>
-					<div class="projecrs__tab-desc">Шоурум</div>
+					<div class="projecrs__tab-desc">Салон</div>
 				</div>
 				<div class="projecrs__tab" data-projecrs="2">
 					<div class="projecrs__tab-caption">Нахимовский проспект</div>
-					<div class="projecrs__tab-desc">Шоурум</div>
+					<div class="projecrs__tab-desc">Салон</div>
 				</div>
 				<div class="projecrs__tab" data-projecrs="3">
-					<div class="projecrs__tab-caption">ТЦ “Гранд”</div>
-					<div class="projecrs__tab-desc">Шоурум</div>
+					<div class="projecrs__tab-caption">ТЦ «Гранд»</div>
+					<div class="projecrs__tab-desc">Салон</div>
 				</div>
 			</div>
 		</div>
@@ -513,13 +714,13 @@ color: 'header--light'
 					<div class="projecrs__slide">
 						<div class="projecrs__item">
 							<div class="projecrs__bg img-cover">
-								<img src="img/projects/img-1.jpg" alt="">
+								<img src="img/projects/img-1-1.jpg" alt="">
 							</div>
 							<div class="projecrs__box">
-								<div class="projecrs__box-caption">Шоурум на Комсомольском проспекте</div>
+								<div class="projecrs__box-caption">Видео о салоне<br> на Комсомольском проспекте</div>
 								<div class="projecrs__box-city">г. Москва</div>
-								<a href="https://www.youtube.com/watch?v=MkwINmXL328"
-									class="projecrs__box-play flex-center" data-fancybox="projecrs-1">
+								<a href="https://youtu.be/VK_EYVY2qYI" class="projecrs__box-play flex-center"
+									data-fancybox="projecrs-1-1">
 									<img src="img/icon/play.svg" alt="">
 								</a>
 							</div>
@@ -528,30 +729,42 @@ color: 'header--light'
 					<div class="projecrs__slide">
 						<div class="projecrs__item">
 							<div class="projecrs__bg img-cover">
-								<img src="img/projects/img-3.jpg" alt="">
-							</div>
-							<div class="projecrs__box">
-								<div class="projecrs__box-caption">Шоурум на Комсомольском проспекте</div>
-								<div class="projecrs__box-city">г. Москва</div>
-								<a href="https://www.youtube.com/watch?v=MkwINmXL328"
-									class="projecrs__box-play flex-center" data-fancybox="projecrs-1">
-									<img src="img/icon/play.svg" alt="">
-								</a>
+								<img src="img/projects/img-1-2.jpg" alt="">
 							</div>
 						</div>
 					</div>
 					<div class="projecrs__slide">
 						<div class="projecrs__item">
 							<div class="projecrs__bg img-cover">
-								<img src="img/projects/img-2.jpg" alt="">
+								<img src="img/projects/img-1-3.jpg" alt="">
 							</div>
-							<div class="projecrs__box">
-								<div class="projecrs__box-caption">Шоурум на Комсомольском проспекте</div>
-								<div class="projecrs__box-city">г. Москва</div>
-								<a href="https://www.youtube.com/watch?v=MkwINmXL328"
-									class="projecrs__box-play flex-center" data-fancybox="projecrs-1">
-									<img src="img/icon/play.svg" alt="">
-								</a>
+						</div>
+					</div>
+					<div class="projecrs__slide">
+						<div class="projecrs__item">
+							<div class="projecrs__bg img-cover">
+								<img src="img/projects/img-1-4.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="projecrs__slide">
+						<div class="projecrs__item">
+							<div class="projecrs__bg img-cover">
+								<img src="img/projects/img-1-5.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="projecrs__slide">
+						<div class="projecrs__item">
+							<div class="projecrs__bg img-cover">
+								<img src="img/projects/img-1-6.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="projecrs__slide">
+						<div class="projecrs__item">
+							<div class="projecrs__bg img-cover">
+								<img src="img/projects/img-1-7.jpg" alt="">
 							</div>
 						</div>
 					</div>
@@ -583,13 +796,13 @@ color: 'header--light'
 					<div class="projecrs__slide">
 						<div class="projecrs__item">
 							<div class="projecrs__bg img-cover">
-								<img src="img/projects/img-1.jpg" alt="">
+								<img src="img/projects/img-2-1.jpg" alt="">
 							</div>
 							<div class="projecrs__box">
-								<div class="projecrs__box-caption">Шоурум на Нахимовском проспекте</div>
+								<div class="projecrs__box-caption">Видео о салоне<br> на Нахимовском проспекте</div>
 								<div class="projecrs__box-city">г. Москва</div>
-								<a href="https://www.youtube.com/watch?v=MkwINmXL328"
-									class="projecrs__box-play flex-center" data-fancybox="projecrs-2">
+								<a href="https://youtu.be/QGGqyueebkE" class="projecrs__box-play flex-center"
+									data-fancybox="projecrs-2-1">
 									<img src="img/icon/play.svg" alt="">
 								</a>
 							</div>
@@ -598,30 +811,42 @@ color: 'header--light'
 					<div class="projecrs__slide">
 						<div class="projecrs__item">
 							<div class="projecrs__bg img-cover">
-								<img src="img/projects/img-3.jpg" alt="">
-							</div>
-							<div class="projecrs__box">
-								<div class="projecrs__box-caption">Шоурум на Нахимовском проспекте</div>
-								<div class="projecrs__box-city">г. Москва</div>
-								<a href="https://www.youtube.com/watch?v=MkwINmXL328"
-									class="projecrs__box-play flex-center" data-fancybox="projecrs-2">
-									<img src="img/icon/play.svg" alt="">
-								</a>
+								<img src="img/projects/img-2-2.jpg" alt="">
 							</div>
 						</div>
 					</div>
 					<div class="projecrs__slide">
 						<div class="projecrs__item">
 							<div class="projecrs__bg img-cover">
-								<img src="img/projects/img-2.jpg" alt="">
+								<img src="img/projects/img-2-3.jpg" alt="">
 							</div>
-							<div class="projecrs__box">
-								<div class="projecrs__box-caption">Шоурум на Нахимовском проспекте</div>
-								<div class="projecrs__box-city">г. Москва</div>
-								<a href="https://www.youtube.com/watch?v=MkwINmXL328"
-									class="projecrs__box-play flex-center" data-fancybox="projecrs-2">
-									<img src="img/icon/play.svg" alt="">
-								</a>
+						</div>
+					</div>
+					<div class="projecrs__slide">
+						<div class="projecrs__item">
+							<div class="projecrs__bg img-cover">
+								<img src="img/projects/img-2-4.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="projecrs__slide">
+						<div class="projecrs__item">
+							<div class="projecrs__bg img-cover">
+								<img src="img/projects/img-2-5.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="projecrs__slide">
+						<div class="projecrs__item">
+							<div class="projecrs__bg img-cover">
+								<img src="img/projects/img-2-6.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="projecrs__slide">
+						<div class="projecrs__item">
+							<div class="projecrs__bg img-cover">
+								<img src="img/projects/img-2-7.jpg" alt="">
 							</div>
 						</div>
 					</div>
@@ -653,13 +878,13 @@ color: 'header--light'
 					<div class="projecrs__slide">
 						<div class="projecrs__item">
 							<div class="projecrs__bg img-cover">
-								<img src="img/projects/img-1.jpg" alt="">
+								<img src="img/projects/img-3-1.jpg" alt="">
 							</div>
 							<div class="projecrs__box">
-								<div class="projecrs__box-caption">Шоурум<br> в ТЦ “Гранд”</div>
+								<div class="projecrs__box-caption">Видео о салоне<br> в ТЦ «Гранд»</div>
 								<div class="projecrs__box-city">г. Москва</div>
-								<a href="https://www.youtube.com/watch?v=MkwINmXL328"
-									class="projecrs__box-play flex-center" data-fancybox="projecrs-3">
+								<a href="https://youtu.be/8E8GK3aknxI" class="projecrs__box-play flex-center"
+									data-fancybox="projecrs-3-1">
 									<img src="img/icon/play.svg" alt="">
 								</a>
 							</div>
@@ -668,30 +893,28 @@ color: 'header--light'
 					<div class="projecrs__slide">
 						<div class="projecrs__item">
 							<div class="projecrs__bg img-cover">
-								<img src="img/projects/img-3.jpg" alt="">
-							</div>
-							<div class="projecrs__box">
-								<div class="projecrs__box-caption">Шоурум<br> в ТЦ “Гранд”</div>
-								<div class="projecrs__box-city">г. Москва</div>
-								<a href="https://www.youtube.com/watch?v=MkwINmXL328"
-									class="projecrs__box-play flex-center" data-fancybox="projecrs-3">
-									<img src="img/icon/play.svg" alt="">
-								</a>
+								<img src="img/projects/img-3-2.jpg" alt="">
 							</div>
 						</div>
 					</div>
 					<div class="projecrs__slide">
 						<div class="projecrs__item">
 							<div class="projecrs__bg img-cover">
-								<img src="img/projects/img-2.jpg" alt="">
+								<img src="img/projects/img-3-3.jpg" alt="">
 							</div>
-							<div class="projecrs__box">
-								<div class="projecrs__box-caption">Шоурум<br> в ТЦ “Гранд”</div>
-								<div class="projecrs__box-city">г. Москва</div>
-								<a href="https://www.youtube.com/watch?v=MkwINmXL328"
-									class="projecrs__box-play flex-center" data-fancybox="projecrs-3">
-									<img src="img/icon/play.svg" alt="">
-								</a>
+						</div>
+					</div>
+					<div class="projecrs__slide">
+						<div class="projecrs__item">
+							<div class="projecrs__bg img-cover">
+								<img src="img/projects/img-3-4.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="projecrs__slide">
+						<div class="projecrs__item">
+							<div class="projecrs__bg img-cover">
+								<img src="img/projects/img-3-5.jpg" alt="">
 							</div>
 						</div>
 					</div>
@@ -737,125 +960,186 @@ color: 'header--light'
 			<div class="reviews__title title">Почитайте отзывы партнеров, которые уже работают с нами</div>
 		</div>
 		<div class="reviews__body flex">
-			<div class="arrow arrow--prev">
-				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path
-						d="M18.464 21.886C18.3022 21.9702 18.1206 22.0087 17.9386 21.9974C17.7566 21.9861 17.5811 21.9255 17.431 21.822L4.43099 12.822C4.29816 12.73 4.1896 12.6071 4.11462 12.464C4.03965 12.3208 4.00048 12.1616 4.00048 12C4.00048 11.8384 4.03965 11.6792 4.11462 11.5361C4.1896 11.3929 4.29816 11.2701 4.43099 11.178L17.431 2.17803C17.5809 2.07348 17.7565 2.01209 17.9389 2.00053C18.1213 1.98898 18.3033 2.02771 18.4651 2.11251C18.627 2.19731 18.7625 2.32491 18.8568 2.48141C18.9511 2.63791 19.0006 2.8173 19 3.00003V21C19 21.1826 18.9501 21.3616 18.8556 21.5178C18.7611 21.674 18.6257 21.8013 18.464 21.886ZM17 4.90903L6.75699 12L17 19.091V4.90903Z"
-						fill="#43494D" />
-				</svg>
-			</div>
 			<div class="reviews__wrap">
 				<div class="reviews__slick">
 					<div class="reviews__slide">
 						<div class="reviews__item flex">
-							<div class="reviews__left flex">
-								<div class="reviews__left-box">
-									<div class="reviews__left-caption">Студия<br> OH, BOY,</div>
-									<div class="reviews__left-city">г. Москва</div>
-								</div>
-								<div class="reviews__left-img img-cover">
-									<img src="img/reviews/img.jpg" alt="">
+							<div class="reviews__left">
+								<div class="reviews__video">
+									<div class="reviews__video-bg img-cover">
+										<img src="img/reviews/img-1.jpg" alt="">
+									</div>
+									<a href="https://www.youtube.com/watch?v=CDFx8mX2sHM&feature=youtu.be"
+										class="reviews__video-play flex-center" data-fancybox="reviews-1" tabindex="0">
+										<img src="img/icon/play.svg" alt="">
+									</a>
 								</div>
 							</div>
 							<div class="reviews__right">
-								<div class="reviews__desc">Для проекта мужской квартиры над которым работал наш
-									дизайн-сервис в 2018г нужен был качественный и стильный кухонный гарнитур, но при
-									этом по приемлемой цене. Обратились в салон в ТЦ Гранд ...</div>
-								<a href="#" class="reviews__link reviews--js">Читать полностью</a>
+								<div class="reviews__name">Екатерина Бегичева</div>
+								<div class="reviews__cation">Дизайнер интерьеров, ТОП-100 AD,<br> член ADDI</div>
+								<div class="reviews__desc">
+									<p>Первый проект с кухней от Giulia Novars был 7 лет назад. Это была небольшая кухня
+										в квартире для молодого парня. После этого проекта и началось наше плотное
+										сотрудничество и дружба с компанией. </p>
+								</div>
+								<div class="reviews__arrows">
+									<div class="arrow arrow--prev">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M18.464 21.886C18.3022 21.9702 18.1206 22.0087 17.9386 21.9974C17.7566 21.9861 17.5811 21.9255 17.431 21.822L4.43099 12.822C4.29816 12.73 4.1896 12.6071 4.11462 12.464C4.03965 12.3208 4.00048 12.1616 4.00048 12C4.00048 11.8384 4.03965 11.6792 4.11462 11.5361C4.1896 11.3929 4.29816 11.2701 4.43099 11.178L17.431 2.17803C17.5809 2.07348 17.7565 2.01209 17.9389 2.00053C18.1213 1.98898 18.3033 2.02771 18.4651 2.11251C18.627 2.19731 18.7625 2.32491 18.8568 2.48141C18.9511 2.63791 19.0006 2.8173 19 3.00003V21C19 21.1826 18.9501 21.3616 18.8556 21.5178C18.7611 21.674 18.6257 21.8013 18.464 21.886ZM17 4.90903L6.75699 12L17 19.091V4.90903Z"
+												fill="#43494D" />
+										</svg>
+									</div>
+									<div class="arrow arrow--next">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M5.53601 21.886C5.69777 21.9702 5.8794 22.0087 6.06139 21.9974C6.24338 21.9861 6.41886 21.9255 6.56901 21.822L19.569 12.822C19.7018 12.73 19.8104 12.6071 19.8854 12.464C19.9604 12.3208 19.9995 12.1616 19.9995 12C19.9995 11.8384 19.9604 11.6792 19.8854 11.5361C19.8104 11.3929 19.7018 11.2701 19.569 11.178L6.56901 2.17803C6.41915 2.07348 6.24346 2.01209 6.0611 2.00053C5.87874 1.98898 5.69671 2.02771 5.53486 2.11251C5.373 2.19731 5.23753 2.32491 5.14322 2.48141C5.0489 2.63791 4.99937 2.8173 5.00001 3.00003V21C4.99998 21.1826 5.04991 21.3616 5.14439 21.5178C5.23888 21.674 5.37431 21.8013 5.53601 21.886ZM7.00001 4.90903L17.243 12L7.00001 19.091V4.90903Z"
+												fill="#43494D" />
+										</svg>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="reviews__slide">
 						<div class="reviews__item flex">
-							<div class="reviews__left flex">
-								<div class="reviews__left-box">
-									<div class="reviews__left-caption">Студия<br> BOY,</div>
-									<div class="reviews__left-city">г. Москва</div>
-								</div>
-								<div class="reviews__left-img img-cover">
-									<img src="img/reviews/img.jpg" alt="">
+							<div class="reviews__left">
+								<div class="reviews__video">
+									<div class="reviews__video-bg img-cover">
+										<img src="img/reviews/img-2.jpg" alt="">
+									</div>
+									<a href="https://youtu.be/sA_avPNcDA4" class="reviews__video-play flex-center"
+										data-fancybox="reviews-2" tabindex="0">
+										<img src="img/icon/play.svg" alt="">
+									</a>
 								</div>
 							</div>
 							<div class="reviews__right">
-								<div class="reviews__desc">Для проекта мужской квартиры над которым работал наш
-									дизайн-сервис в 2018г нужен был качественный и стильный кухонный гарнитур, но при
-									этом по приемлемой цене. Обратились в салон в ТЦ Гранд ...</div>
-								<a href="#" class="reviews__link reviews--js">Читать полностью</a>
+								<div class="reviews__name">Елена Молодцова</div>
+								<div class="reviews__cation">Дизайнер интерьеров</div>
+								<div class="reviews__desc">
+									<p>В результате большой совместной работы с салоном Giulia Novars и нашими
+										строителями мы реализовали геометрически сложное помещение: все линии сошлись в
+										нужных точках, все зазоры ровные и минимальные, все углы прямые, все встало, как
+										надо, и с первого раза.</p>
+								</div>
+								<div class="reviews__arrows">
+									<div class="arrow arrow--prev">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M18.464 21.886C18.3022 21.9702 18.1206 22.0087 17.9386 21.9974C17.7566 21.9861 17.5811 21.9255 17.431 21.822L4.43099 12.822C4.29816 12.73 4.1896 12.6071 4.11462 12.464C4.03965 12.3208 4.00048 12.1616 4.00048 12C4.00048 11.8384 4.03965 11.6792 4.11462 11.5361C4.1896 11.3929 4.29816 11.2701 4.43099 11.178L17.431 2.17803C17.5809 2.07348 17.7565 2.01209 17.9389 2.00053C18.1213 1.98898 18.3033 2.02771 18.4651 2.11251C18.627 2.19731 18.7625 2.32491 18.8568 2.48141C18.9511 2.63791 19.0006 2.8173 19 3.00003V21C19 21.1826 18.9501 21.3616 18.8556 21.5178C18.7611 21.674 18.6257 21.8013 18.464 21.886ZM17 4.90903L6.75699 12L17 19.091V4.90903Z"
+												fill="#43494D" />
+										</svg>
+									</div>
+									<div class="arrow arrow--next">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M5.53601 21.886C5.69777 21.9702 5.8794 22.0087 6.06139 21.9974C6.24338 21.9861 6.41886 21.9255 6.56901 21.822L19.569 12.822C19.7018 12.73 19.8104 12.6071 19.8854 12.464C19.9604 12.3208 19.9995 12.1616 19.9995 12C19.9995 11.8384 19.9604 11.6792 19.8854 11.5361C19.8104 11.3929 19.7018 11.2701 19.569 11.178L6.56901 2.17803C6.41915 2.07348 6.24346 2.01209 6.0611 2.00053C5.87874 1.98898 5.69671 2.02771 5.53486 2.11251C5.373 2.19731 5.23753 2.32491 5.14322 2.48141C5.0489 2.63791 4.99937 2.8173 5.00001 3.00003V21C4.99998 21.1826 5.04991 21.3616 5.14439 21.5178C5.23888 21.674 5.37431 21.8013 5.53601 21.886ZM7.00001 4.90903L17.243 12L7.00001 19.091V4.90903Z"
+												fill="#43494D" />
+										</svg>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="reviews__slide">
 						<div class="reviews__item flex">
-							<div class="reviews__left flex">
-								<div class="reviews__left-box">
-									<div class="reviews__left-caption">Студия<br> OH, BOY,</div>
-									<div class="reviews__left-city">г. Москва</div>
-								</div>
+							<div class="reviews__left">
 								<div class="reviews__left-img img-cover">
-									<img src="img/reviews/img.jpg" alt="">
+									<img src="img/reviews/img-3.jpg" alt="">
 								</div>
 							</div>
 							<div class="reviews__right">
-								<div class="reviews__desc">Для проекта мужской квартиры над которым работал наш
-									дизайн-сервис в 2018г нужен был качественный и стильный кухонный гарнитур, но при
-									этом по приемлемой цене. Обратились в салон в ТЦ Гранд ...</div>
-								<a href="#" class="reviews__link reviews--js">Читать полностью</a>
+								<div class="reviews__name">Дарина Миткова</div>
+								<div class="reviews__cation">Директор дизайн студии Дарины Митковой
+								</div>
+								<div class="reviews__desc">
+									<p>Я очень люблю Джулия Новарс за качество.</p>
+									<p>Это, я считаю, мебель на века. Когда на проекте мебель Джулия Новарс, я могу
+										быть спокойна: за качество, за сроки, за соответствие проекту, за сплоченную
+										работу дизайнеров, сборщиков...</p>
+								</div>
+								<a href="javascript:void(0)" class="reviews__link reviews--js-1">Читать полностью</a>
+								<div class="reviews__arrows">
+									<div class="arrow arrow--prev">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M18.464 21.886C18.3022 21.9702 18.1206 22.0087 17.9386 21.9974C17.7566 21.9861 17.5811 21.9255 17.431 21.822L4.43099 12.822C4.29816 12.73 4.1896 12.6071 4.11462 12.464C4.03965 12.3208 4.00048 12.1616 4.00048 12C4.00048 11.8384 4.03965 11.6792 4.11462 11.5361C4.1896 11.3929 4.29816 11.2701 4.43099 11.178L17.431 2.17803C17.5809 2.07348 17.7565 2.01209 17.9389 2.00053C18.1213 1.98898 18.3033 2.02771 18.4651 2.11251C18.627 2.19731 18.7625 2.32491 18.8568 2.48141C18.9511 2.63791 19.0006 2.8173 19 3.00003V21C19 21.1826 18.9501 21.3616 18.8556 21.5178C18.7611 21.674 18.6257 21.8013 18.464 21.886ZM17 4.90903L6.75699 12L17 19.091V4.90903Z"
+												fill="#43494D" />
+										</svg>
+									</div>
+									<div class="arrow arrow--next">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M5.53601 21.886C5.69777 21.9702 5.8794 22.0087 6.06139 21.9974C6.24338 21.9861 6.41886 21.9255 6.56901 21.822L19.569 12.822C19.7018 12.73 19.8104 12.6071 19.8854 12.464C19.9604 12.3208 19.9995 12.1616 19.9995 12C19.9995 11.8384 19.9604 11.6792 19.8854 11.5361C19.8104 11.3929 19.7018 11.2701 19.569 11.178L6.56901 2.17803C6.41915 2.07348 6.24346 2.01209 6.0611 2.00053C5.87874 1.98898 5.69671 2.02771 5.53486 2.11251C5.373 2.19731 5.23753 2.32491 5.14322 2.48141C5.0489 2.63791 4.99937 2.8173 5.00001 3.00003V21C4.99998 21.1826 5.04991 21.3616 5.14439 21.5178C5.23888 21.674 5.37431 21.8013 5.53601 21.886ZM7.00001 4.90903L17.243 12L7.00001 19.091V4.90903Z"
+												fill="#43494D" />
+										</svg>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="reviews__slide">
 						<div class="reviews__item flex">
-							<div class="reviews__left flex">
-								<div class="reviews__left-box">
-									<div class="reviews__left-caption">Студия<br> BOY,</div>
-									<div class="reviews__left-city">г. Москва</div>
-								</div>
+							<div class="reviews__left">
 								<div class="reviews__left-img img-cover">
-									<img src="img/reviews/img.jpg" alt="">
+									<img src="img/reviews/img-4.jpg" alt="">
 								</div>
 							</div>
 							<div class="reviews__right">
-								<div class="reviews__desc">Для проекта мужской квартиры над которым работал наш
-									дизайн-сервис в 2018г нужен был качественный и стильный кухонный гарнитур, но при
-									этом по приемлемой цене. Обратились в салон в ТЦ Гранд ...</div>
-								<a href="#" class="reviews__link reviews--js">Читать полностью</a>
+								<div class="reviews__name">Кира Яковлева</div>
+								<div class="reviews__cation">Дизайнер интерьеров, основатель WFC Project</div>
+								<div class="reviews__desc">
+									<p>Моя история работы с Giulia Novars началась довольно давно. Я искала решение для
+										своей кухни, и меня заинтересовала мебель этой компании. С тех пор я привожу
+										своих заказчиков в салон Giulia Novars на Комсомольском ....</p>
+								</div>
+								<a href="javascript:void(0)" class="reviews__link reviews--js-2">Читать полностью</a>
+								<div class="reviews__arrows">
+									<div class="arrow arrow--prev">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M18.464 21.886C18.3022 21.9702 18.1206 22.0087 17.9386 21.9974C17.7566 21.9861 17.5811 21.9255 17.431 21.822L4.43099 12.822C4.29816 12.73 4.1896 12.6071 4.11462 12.464C4.03965 12.3208 4.00048 12.1616 4.00048 12C4.00048 11.8384 4.03965 11.6792 4.11462 11.5361C4.1896 11.3929 4.29816 11.2701 4.43099 11.178L17.431 2.17803C17.5809 2.07348 17.7565 2.01209 17.9389 2.00053C18.1213 1.98898 18.3033 2.02771 18.4651 2.11251C18.627 2.19731 18.7625 2.32491 18.8568 2.48141C18.9511 2.63791 19.0006 2.8173 19 3.00003V21C19 21.1826 18.9501 21.3616 18.8556 21.5178C18.7611 21.674 18.6257 21.8013 18.464 21.886ZM17 4.90903L6.75699 12L17 19.091V4.90903Z"
+												fill="#43494D" />
+										</svg>
+									</div>
+									<div class="arrow arrow--next">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M5.53601 21.886C5.69777 21.9702 5.8794 22.0087 6.06139 21.9974C6.24338 21.9861 6.41886 21.9255 6.56901 21.822L19.569 12.822C19.7018 12.73 19.8104 12.6071 19.8854 12.464C19.9604 12.3208 19.9995 12.1616 19.9995 12C19.9995 11.8384 19.9604 11.6792 19.8854 11.5361C19.8104 11.3929 19.7018 11.2701 19.569 11.178L6.56901 2.17803C6.41915 2.07348 6.24346 2.01209 6.0611 2.00053C5.87874 1.98898 5.69671 2.02771 5.53486 2.11251C5.373 2.19731 5.23753 2.32491 5.14322 2.48141C5.0489 2.63791 4.99937 2.8173 5.00001 3.00003V21C4.99998 21.1826 5.04991 21.3616 5.14439 21.5178C5.23888 21.674 5.37431 21.8013 5.53601 21.886ZM7.00001 4.90903L17.243 12L7.00001 19.091V4.90903Z"
+												fill="#43494D" />
+										</svg>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="slick__info flex-center">
-					<div class="slick__info-number">1</div>
-					<span>/</span>
-					<div class="slick__info-box">4</div>
+			</div>
+			<div class="reviews__arrows reviews__arrows_mobile">
+				<div class="arrow arrow--prev">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M18.464 21.886C18.3022 21.9702 18.1206 22.0087 17.9386 21.9974C17.7566 21.9861 17.5811 21.9255 17.431 21.822L4.43099 12.822C4.29816 12.73 4.1896 12.6071 4.11462 12.464C4.03965 12.3208 4.00048 12.1616 4.00048 12C4.00048 11.8384 4.03965 11.6792 4.11462 11.5361C4.1896 11.3929 4.29816 11.2701 4.43099 11.178L17.431 2.17803C17.5809 2.07348 17.7565 2.01209 17.9389 2.00053C18.1213 1.98898 18.3033 2.02771 18.4651 2.11251C18.627 2.19731 18.7625 2.32491 18.8568 2.48141C18.9511 2.63791 19.0006 2.8173 19 3.00003V21C19 21.1826 18.9501 21.3616 18.8556 21.5178C18.7611 21.674 18.6257 21.8013 18.464 21.886ZM17 4.90903L6.75699 12L17 19.091V4.90903Z"
+							fill="#43494D" />
+					</svg>
 				</div>
-			</div>
-			<div class="arrow arrow--next">
-				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path
-						d="M5.53601 21.886C5.69777 21.9702 5.8794 22.0087 6.06139 21.9974C6.24338 21.9861 6.41886 21.9255 6.56901 21.822L19.569 12.822C19.7018 12.73 19.8104 12.6071 19.8854 12.464C19.9604 12.3208 19.9995 12.1616 19.9995 12C19.9995 11.8384 19.9604 11.6792 19.8854 11.5361C19.8104 11.3929 19.7018 11.2701 19.569 11.178L6.56901 2.17803C6.41915 2.07348 6.24346 2.01209 6.0611 2.00053C5.87874 1.98898 5.69671 2.02771 5.53486 2.11251C5.373 2.19731 5.23753 2.32491 5.14322 2.48141C5.0489 2.63791 4.99937 2.8173 5.00001 3.00003V21C4.99998 21.1826 5.04991 21.3616 5.14439 21.5178C5.23888 21.674 5.37431 21.8013 5.53601 21.886ZM7.00001 4.90903L17.243 12L7.00001 19.091V4.90903Z"
-						fill="#43494D" />
-				</svg>
-			</div>
-		</div>
-		<div class="reviews__bottom">
-			<div class="arrow arrow--prev">
-				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path
-						d="M18.464 21.886C18.3022 21.9702 18.1206 22.0087 17.9386 21.9974C17.7566 21.9861 17.5811 21.9255 17.431 21.822L4.43099 12.822C4.29816 12.73 4.1896 12.6071 4.11462 12.464C4.03965 12.3208 4.00048 12.1616 4.00048 12C4.00048 11.8384 4.03965 11.6792 4.11462 11.5361C4.1896 11.3929 4.29816 11.2701 4.43099 11.178L17.431 2.17803C17.5809 2.07348 17.7565 2.01209 17.9389 2.00053C18.1213 1.98898 18.3033 2.02771 18.4651 2.11251C18.627 2.19731 18.7625 2.32491 18.8568 2.48141C18.9511 2.63791 19.0006 2.8173 19 3.00003V21C19 21.1826 18.9501 21.3616 18.8556 21.5178C18.7611 21.674 18.6257 21.8013 18.464 21.886ZM17 4.90903L6.75699 12L17 19.091V4.90903Z"
-						fill="#43494D" />
-				</svg>
-			</div>
-			<div class="slick__info flex-center">
-				<div class="slick__info-number">1</div>
-				<span>/</span>
-				<div class="slick__info-box">4</div>
-			</div>
-			<div class="arrow arrow--next">
-				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path
-						d="M5.53601 21.886C5.69777 21.9702 5.8794 22.0087 6.06139 21.9974C6.24338 21.9861 6.41886 21.9255 6.56901 21.822L19.569 12.822C19.7018 12.73 19.8104 12.6071 19.8854 12.464C19.9604 12.3208 19.9995 12.1616 19.9995 12C19.9995 11.8384 19.9604 11.6792 19.8854 11.5361C19.8104 11.3929 19.7018 11.2701 19.569 11.178L6.56901 2.17803C6.41915 2.07348 6.24346 2.01209 6.0611 2.00053C5.87874 1.98898 5.69671 2.02771 5.53486 2.11251C5.373 2.19731 5.23753 2.32491 5.14322 2.48141C5.0489 2.63791 4.99937 2.8173 5.00001 3.00003V21C4.99998 21.1826 5.04991 21.3616 5.14439 21.5178C5.23888 21.674 5.37431 21.8013 5.53601 21.886ZM7.00001 4.90903L17.243 12L7.00001 19.091V4.90903Z"
-						fill="#43494D" />
-				</svg>
+				<div class="arrow arrow--next">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M5.53601 21.886C5.69777 21.9702 5.8794 22.0087 6.06139 21.9974C6.24338 21.9861 6.41886 21.9255 6.56901 21.822L19.569 12.822C19.7018 12.73 19.8104 12.6071 19.8854 12.464C19.9604 12.3208 19.9995 12.1616 19.9995 12C19.9995 11.8384 19.9604 11.6792 19.8854 11.5361C19.8104 11.3929 19.7018 11.2701 19.569 11.178L6.56901 2.17803C6.41915 2.07348 6.24346 2.01209 6.0611 2.00053C5.87874 1.98898 5.69671 2.02771 5.53486 2.11251C5.373 2.19731 5.23753 2.32491 5.14322 2.48141C5.0489 2.63791 4.99937 2.8173 5.00001 3.00003V21C4.99998 21.1826 5.04991 21.3616 5.14439 21.5178C5.23888 21.674 5.37431 21.8013 5.53601 21.886ZM7.00001 4.90903L17.243 12L7.00001 19.091V4.90903Z"
+							fill="#43494D" />
+					</svg>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -869,40 +1153,38 @@ color: 'header--light'
 					<div class="awards__left-slick">
 						<div class="awards__left-slide">
 							<div class="awards__title">3-я<br> международная выставка «Мебельный клуб»</div>
-							<div class="awards__subtitle">Национальная премия «Российская кабриоль» в номинации кухонная
-								мебель
-								премиум класса.</div>
+							<div class="awards__subtitle">Национальная премия «Российская кабриоль» в номинации
+								«Кухонная мебель премиум-класса».</div>
 						</div>
 						<div class="awards__left-slide">
 							<div class="awards__title">«АРТЛИГА - 2018» - Всероссийский конкурс в области промышленного
 								дизайна</div>
-							<div class="awards__subtitle">Победа кухни «Ceramic» в номинации NEXT (мебель для кухни)
+							<div class="awards__subtitle">Победа кухни CERAMIC в номинации NEXT (мебель для кухни).
 							</div>
 						</div>
 						<div class="awards__left-slide">
 							<div class="awards__title">«АРТЛИГА - 2013» - Всероссийский конкурс в области промышленного
 								дизайна</div>
-							<div class="awards__subtitle">Победа кухни «Synthesis» в номинации NEXT (мебель для кухни)
+							<div class="awards__subtitle">Победа кухни SYNTHESIS в номинации NEXT (мебель для кухни).
 							</div>
 						</div>
 						<div class="awards__left-slide">
 							<div class="awards__title">Red Dot Design awards – международный конкурс в области
 								промышленного
 								дизайна</div>
-							<div class="awards__subtitle">Почетная премия «Red Dot Award: product design 2012» за новый
+							<div class="awards__subtitle">Почетная премия Red Dot Award: product design 2012 за новый
 								проект LOFT.</div>
 						</div>
 						<div class="awards__left-slide">
 							<div class="awards__title">3-я<br> международная выставка «Мебельный клуб»</div>
-							<div class="awards__subtitle">Национальная премия «Российская кабриоль» в номинации кухонная
-								мебель
-								премиум класса.</div>
+							<div class="awards__subtitle">Национальная премия «Российская кабриоль»  в номинации
+								«Кухонная мебель премиум-класса».</div>
 						</div>
 						<div class="awards__left-slide">
 							<div class="awards__title">13 международная выставка мебель - 2001 (эскпоцентр, красная
 								пресня)
 							</div>
-							<div class="awards__subtitle">Кухонный гарнитур “Maria Lucido” награжден «ГранПри» за
+							<div class="awards__subtitle">Кухонный гарнитур MARIA LUCIDO награжден Гран-при за
 								дизайнерское решение.</div>
 						</div>
 					</div>
@@ -987,14 +1269,172 @@ color: 'header--light'
 	</div>
 </div>
 
+<div id="showrooms" class="showrooms">
+	<div class="wrapper">
+		<div class="showrooms__title title">Салоны и офис<br> Guilia Novars в Москве</div>
+	</div>
+	<div class="showrooms__body">
+		<div class="wrapper">
+			<div class="showrooms__tabs flex">
+				<div class="showrooms__tab active" data-showrooms="1">
+					<div class="showrooms__tab-caption">Комсомольский проспект</div>
+					<div class="showrooms__tab-desc">Салон</div>
+				</div>
+				<div class="showrooms__tab" data-showrooms="2">
+					<div class="showrooms__tab-caption">Нахимовский проспект</div>
+					<div class="showrooms__tab-desc">Салон</div>
+				</div>
+				<div class="showrooms__tab" data-showrooms="3">
+					<div class="showrooms__tab-caption">ТЦ «Гранд»</div>
+					<div class="showrooms__tab-desc">Салон</div>
+				</div>
+				<div class="showrooms__tab" data-showrooms="4">
+					<div class="showrooms__tab-caption">Москва-Сити</div>
+					<div class="showrooms__tab-desc">Офис</div>
+				</div>
+			</div>
+		</div>
+		<div class="showrooms__content">
+			<div class="showrooms__block showrooms__block_1 active" data-showrooms-block="1">
+				<div class="showrooms__map img-contain">
+					<img src="img/showrooms/map-1.jpg" alt="">
+				</div>
+				<div class="showrooms__marker active"></div>
+				<div class="showrooms__box">
+					<div class="showrooms__card active">
+						<div class="showrooms__card-bg img-contain">
+							<img src="img/showrooms/bg-card.svg" alt="">
+						</div>
+						<div class="showrooms__card-top">
+							<div class="showrooms__card-title">Салон</div>
+							<div class="showrooms__card-subtitle">Комсомольский проспект</div>
+						</div>
+						<div class="showrooms__card-content">
+							<div class="showrooms__card-box">
+								<div class="showrooms__card-caption">Адрес:</div>
+								<div class="showrooms__card-desc">Комсомольский пр., 19, Москва, 119048 </div>
+							</div>
+							<div class="showrooms__card-box">
+								<div class="showrooms__card-caption">Телефон:</div>
+								<a href="tel:+7 (499) 245-25-00" class="showrooms__card-desc">+7 (499) 245-25-00</a>
+							</div>
+							<div class="showrooms__card-box">
+								<div class="showrooms__card-caption">Часы работы:</div>
+								<div class="showrooms__card-desc">10.00 – 21.00 (пн - сб),<br>
+									10.00 – 20.00 (воскресенье)</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="showrooms__block showrooms__block_2" data-showrooms-block="2">
+				<div class="showrooms__map img-contain">
+					<img src="img/showrooms/map-2.jpg" alt="">
+				</div>
+				<div class="showrooms__marker active"></div>
+				<div class="showrooms__box">
+					<div class="showrooms__card active">
+						<div class="showrooms__card-bg img-contain">
+							<img src="img/showrooms/bg-card.svg" alt="">
+						</div>
+						<div class="showrooms__card-top">
+							<div class="showrooms__card-title">Салон</div>
+							<div class="showrooms__card-subtitle">Нахимовский проспект</div>
+						</div>
+						<div class="showrooms__card-content">
+							<div class="showrooms__card-box">
+								<div class="showrooms__card-caption">Адрес:</div>
+								<div class="showrooms__card-desc">Нахимовский пр., 24, Москва, ТЦ Decor Expo.</div>
+							</div>
+							<div class="showrooms__card-box">
+								<div class="showrooms__card-caption">Телефон:</div>
+								<a href="tel:+7 (495) 980-90-20" class="showrooms__card-desc">+7 (495) 980-90-20</a>
+								<a href="tel:+7 (495) 980-90-21" class="showrooms__card-desc">+7 (495) 980-90-21</a>
+							</div>
+							<div class="showrooms__card-box">
+								<div class="showrooms__card-caption">Часы работы:</div>
+								<div class="showrooms__card-desc">10.00 – 21.00 (пн - сб),<br>
+									10.00 – 20.00 (воскресенье)</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="showrooms__block showrooms__block_3" data-showrooms-block="3">
+				<div class="showrooms__map img-contain">
+					<img src="img/showrooms/map-3.jpg" alt="">
+				</div>
+				<div class="showrooms__marker active"></div>
+				<div class="showrooms__box">
+					<div class="showrooms__card active">
+						<div class="showrooms__card-bg img-contain">
+							<img src="img/showrooms/bg-card.svg" alt="">
+						</div>
+						<div class="showrooms__card-top">
+							<div class="showrooms__card-title">Салон</div>
+							<div class="showrooms__card-subtitle">Мебельный ТК «Гранд»</div>
+						</div>
+						<div class="showrooms__card-content">
+							<div class="showrooms__card-box">
+								<div class="showrooms__card-caption">Адрес:</div>
+								<div class="showrooms__card-desc">Бутакова, 4, Ленинградское ш., Химки, Московская
+									обл., мебельный ТК «Гранд»</div>
+							</div>
+							<div class="showrooms__card-box">
+								<div class="showrooms__card-caption">Телефон:</div>
+								<a href="tel:+7 (495) 777-48-94" class="showrooms__card-desc">+7 (495) 777-48-94</a>
+							</div>
+							<div class="showrooms__card-box">
+								<div class="showrooms__card-caption">Часы работы:</div>
+								<div class="showrooms__card-desc">10.00 – 21.00 (пн - вс), </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="showrooms__block showrooms__block_4" data-showrooms-block="4">
+				<div class="showrooms__map img-contain">
+					<img src="img/showrooms/map-4.jpg" alt="">
+				</div>
+				<div class="showrooms__marker active"></div>
+				<div class="showrooms__box">
+					<div class="showrooms__card active">
+						<div class="showrooms__card-bg img-contain">
+							<img src="img/showrooms/bg-card.svg" alt="">
+						</div>
+						<div class="showrooms__card-top">
+							<div class="showrooms__card-title">Офис</div>
+						</div>
+						<div class="showrooms__card-content">
+							<div class="showrooms__card-box">
+								<div class="showrooms__card-caption">Адрес:</div>
+								<div class="showrooms__card-desc">Пресненская набережная,<br> 12, оф.69, Москва,<br>
+									«Москва-Сити», башня «Федерация».</div>
+							</div>
+							<div class="showrooms__card-box">
+								<div class="showrooms__card-caption">Телефон:</div>
+								<a href="tel:+7 (906) 775-47-48" class="showrooms__card-desc">+7 (906) 775-47-48</a>
+							</div>
+							<div class="showrooms__card-box">
+								<div class="showrooms__card-caption">Часы работы:</div>
+								<div class="showrooms__card-desc">10.00 – 20.00 (пн - вс), </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <div class="connection">
 	<div class="wrapper">
 		<div class="connection__wrap">
 			<div class="connection__title">Остались <span>вопросы?</span></div>
-			<div class="connection__desc desc">Напишите нам в WatsApp. Менеджер Giulia Novars ответит вам в ближайшее
+			<div class="connection__desc desc">Напишите нам в WhatsApp. Дизайнер Giulia Novars ответит вам в ближайшее
 				время.
 			</div>
-			<a href="#" class="connection__btn btn btn--item">
+			<a href="https://wa.me/79067754748" class="connection__btn btn btn--item">
 				<span>Написать</span>
 				<i>
 					<svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1020,11 +1460,14 @@ color: 'header--light'
 	<div class="wrapper">
 		<div class="social__caption">Мы в социальных сетях</div>
 		<div class="social__list flex-center">
-			<a href="#" class="social__link social__link--fb" target="_blank"></a>
-			<a href="#" class="social__link social__link--inst" target="_blank"></a>
-			<a href="#" class="social__link social__link--yt" target="_blank"></a>
-			<a href="#" class="social__link social__link--hz" target="_blank"></a>
-			<a href="#" class="social__link social__link--pt" target="_blank"></a>
+			<a href="https://www.facebook.com/giulianovars.moscow/" class="social__link social__link--fb"
+				target="_blank"></a>
+			<a href="https://instagram.com/giulianovars.moscow" class="social__link social__link--inst"
+				target="_blank"></a>
+			<a href="https://www.youtube.com/channel/UCAX7pDkziM0CPUMRS3slk8A" class="social__link social__link--yt"
+				target="_blank"></a>
+			<a href="https://vk.com/club200471138" class="social__link social__link--vk" target="_blank"></a>
+			<!--a href="#" class="social__link social__link--pt" target="_blank"></a-->
 		</div>
 	</div>
 </div>
@@ -1037,10 +1480,10 @@ color: 'header--light'
 				fill="#141516" />
 		</svg>
 	</div>
-	<form class="form">
+	<form action="mail.php" onsubmit="ym(69709072,'reachGoal','lead_send'); return true;" method="post" class="form">
 		<div class="form__top">
 			<div class="form__title">Давайте<br> познакомимся</div>
-			<div class="form__subtitle">Оставьте ваши контактные данные, менеджер Giulia Novars свяжется с вами</div>
+			<div class="form__subtitle">Оставьте ваши контактные данные, дизайнер Giulia Novars свяжется с вами</div>
 		</div>
 		<div class="form__body">
 			<label class="form__label">
@@ -1074,7 +1517,6 @@ color: 'header--light'
 						<path class="form__stroke" d="M2.5 5.83325L10 10.8333L17.5 5.83325" stroke="#A9B2B5"
 							stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 					</svg>
-
 				</div>
 				<input type="email" name="email" class="form__field field" data-error="Укажите ваш email"
 					placeholder="Почта">
@@ -1106,7 +1548,8 @@ color: 'header--light'
 				fill="#141516" />
 		</svg>
 	</div>
-	<form class="form">
+	<form action="mail.php" onsubmit="ym(69709072,'reachGoal','lead_send'); return true;" method="post" class="form">
+		<input type="hidden" name="thanks" value="thanks-catalog.html">
 		<div class="form__top">
 			<div class="form__title">Оставьте<br> контактные данные</div>
 			<div class="form__subtitle">Мы пришлем вам на почту актуальный<br> каталог продукции</div>
@@ -1166,7 +1609,7 @@ color: 'header--light'
 	</form>
 </div><!-- end catalog-modal -->
 
-<div id="reviews-modal" class="reviews-modal modal" style="display: none;">
+<div id="reviews-modal-1" class="reviews-modal modal" style="display: none;">
 	<div class="modal__closed flex-center svg-contain" data-fancybox-close>
 		<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path
@@ -1177,26 +1620,54 @@ color: 'header--light'
 	<div class="reviews-modal__body">
 		<div class="reviews-modal__top flex">
 			<div class="reviews-modal__img img-cover">
-				<img src="img/reviews/img.jpg" alt="">
-			</div>
-			<div class="reviews-modal__box">
-				<div class="reviews-modal__caption">Студия OH, BOY,</div>
-				<div class="reviews-modal__city">г. Москва</div>
+				<img src="img/reviews/img-3.jpg" alt="">
 			</div>
 		</div>
 		<div class="reviews-modal__content">
-			<p>Для проекта мужской квартиры над которым работал наш дизайн-сервис в 2018г нужен был качественный и
-				стильный кухонный гарнитур, но при этом по приемлемой цене.
-				Обратились в салон в ТЦ Гранд. Очень понравился профессионализм сотрудников, внимательное отношение к
-				проекту и потрясающей красоты отделки (натуральный шпон, например), которые предлагает Guilia Novars.
-				Качество и материалы проекта нас полностью устроили.</p>
-			<p>Для сравнения цены похожий проект просчитали и у других производителей. Цена Guilia Novars оказалась
-				самой выгодной и при этом материалы отделки фасадов и разнообразие внутреннего наполнения были наилучшим
-				визуальным решением для нашего проекта.</p>
-			<p>Опыт сотрудничества с салоном в ТЦ Гранд оказался максимально положительным. Все вопросы с менеджером
-				решались профессионально и оперативно.
-				Можем с уверенностью рекомендовать данный салон, как надежного поставщика красивой и качественной
-				кухонной мебели.</p>
+			<p>Я очень люблю Джулия Новарс за качество.</p>
+			<p>Это, я считаю, мебель на века. Когда на проекте мебель Джулия Новарс, я могу быть спокойна: за качество,
+				за сроки, за соответствие проекту, за сплоченную работу дизайнеров, сборщиков.</p>
+			<p>И всегда приятно находиться в салоне. Я наконец-то могу немножко отдохнуть и отдать свой объект в руки
+				профессионалов.</p>
+		</div>
+		<div class="reviews-modal__bottom">
+			<div class="reviews-modal__name">Дарина Миткова</div>
+			<div class="reviews-modal__caption">Директор дизайн студии Дарины Митковой</div>
+		</div>
+	</div>
+</div><!-- end reviews-modal -->
+
+<div id="reviews-modal-2" class="reviews-modal modal" style="display: none;">
+	<div class="modal__closed flex-center svg-contain" data-fancybox-close>
+		<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path
+				d="M11.3258 9.99967L15.0368 6.28874C15.2129 6.11293 15.3119 5.87435 15.3122 5.6255C15.3124 5.37665 15.2137 5.1379 15.0379 4.96178C14.8621 4.78566 14.6235 4.6866 14.3747 4.68638C14.1258 4.68616 13.8871 4.7848 13.711 4.96061L10 8.67155L6.2891 4.96061C6.11298 4.78449 5.87411 4.68555 5.62504 4.68555C5.37597 4.68555 5.1371 4.78449 4.96098 4.96061C4.78486 5.13673 4.68591 5.3756 4.68591 5.62467C4.68591 5.87374 4.78486 6.11262 4.96098 6.28874L8.67191 9.99967L4.96098 13.7106C4.78486 13.8867 4.68591 14.1256 4.68591 14.3747C4.68591 14.6237 4.78486 14.8626 4.96098 15.0387C5.1371 15.2149 5.37597 15.3138 5.62504 15.3138C5.87411 15.3138 6.11298 15.2149 6.2891 15.0387L10 11.3278L13.711 15.0387C13.8871 15.2149 14.126 15.3138 14.375 15.3138C14.6241 15.3138 14.863 15.2149 15.0391 15.0387C15.2152 14.8626 15.3142 14.6237 15.3142 14.3747C15.3142 14.1256 15.2152 13.8867 15.0391 13.7106L11.3258 9.99967Z"
+				fill="#141516" />
+		</svg>
+	</div>
+	<div class="reviews-modal__body">
+		<div class="reviews-modal__top flex">
+			<div class="reviews-modal__img img-cover">
+				<img src="img/reviews/img-4.jpg" alt="">
+			</div>
+		</div>
+		<div class="reviews-modal__content">
+			<p>Моя история работы с Giulia Novars началась довольно давно. Я искала решение для своей кухни, и меня
+				заинтересовала мебель этой компании. С тех пор я привожу своих заказчиков в салон Giulia Novars на
+				Комсомольском. И мое мнение о производстве и салоне можно считать двойным: я и как дизайнер, и как
+				потребитель.</p>
+			<p>Когда появляется проект с белой лаконичной кухней, вспоминаю слова одного заказчика: «Я не думал, что
+				белая кухня может быть такой красивой». Иногда думаю: как Giulia Novars удается сохранить приятное
+				впечатление? Думаю, причина в большом опыте, отлаженной работе и высоком качестве материалов.</p>
+			<p>В одном из последних проектов я и Giulia Novars на Комсомольском реализовали несколько изделий по
+				индивидуальному дизайну. После монтажа кухни заказчик проекта был доволен исполнением, сборкой, сроками
+				и решил заказать другие изделия. В общем, моя история с Giulia Novars ещё продолжается. Отдельное
+				спасибо сотруднику салона Людмиле Зиновьевой, этот человек отзывчив и всегда найдет решение любой
+				сложной задаче.</p>
+		</div>
+		<div class="reviews-modal__bottom">
+			<div class="reviews-modal__name">Кира Яковлева</div>
+			<div class="reviews-modal__caption">Дизайнер интерьеров, основатель WFC Project</div>
 		</div>
 	</div>
 </div><!-- end reviews-modal -->
@@ -1380,6 +1851,8 @@ color: 'header--light'
 		</div>
 	</div>
 </div><!-- end confidentiality-modal -->
+
+<div class="notice notice_warning"></div>
 
 @@include('inc/page-footer.html')
 

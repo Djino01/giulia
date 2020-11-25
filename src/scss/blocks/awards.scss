@@ -1,6 +1,6 @@
 .awards {
-	padding-top: 207px;
-	padding-bottom: 188px;
+	padding-top: 100px;
+	padding-bottom: 200px;
 	position: relative;
 	&:after,
 	&:before {
@@ -27,6 +27,9 @@
 		z-index: 20;
 		&-box {
 			justify-content: flex-start;
+			position: absolute;
+			left: 0px;
+			bottom: 20px;
 		}
 		.slick__info {
 			margin: 0px 25px;
@@ -124,8 +127,8 @@
 }
 @media (max-width: 1318px) {
 	.awards {
-		padding-top: 140px;
-		padding-bottom: 120px;
+		padding-top: 80px;
+		padding-bottom: 60px;
 		&:after {
 			left: calc(50% - 2495px);
 		}
@@ -138,6 +141,10 @@
 			margin-right: 0;
 			order: 2;
 			margin-top: 45px;
+			&-box {
+				position: relative;
+				bottom: 0px;
+			}
 			&-body {
 				width: 280px;
 				br {
@@ -176,7 +183,7 @@
 @media (max-width: 1010px) {
 	.awards {
 		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-bottom: 0px;
 		&__body {
 			flex-wrap: wrap;
 			margin-right: -56px;
@@ -236,7 +243,6 @@
 }
 @media (max-width: 760px) {
 	.awards {
-		padding-top: 60px;
 		&__slick {
 			.slick-slide {
 				&.slick-current + .slick-slide {
